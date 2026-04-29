@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node generate-reports.js)",
+      "Bash(python3 create-test-pdfs.py)",
+      "Bash(python create-test-pdfs.py)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\26956\\Desktop"
+    ]
+  }
+}

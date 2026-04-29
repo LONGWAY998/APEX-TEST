@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"reports\")",
+      "WebFetch(domain:longway998.github.io)"
+    ]
+  }
+}
