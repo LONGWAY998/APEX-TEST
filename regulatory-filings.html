@@ -63,15 +63,6 @@
                     <button class="filter-btn" data-year="2025">2025</button>
                     <button class="filter-btn" data-year="2024">2024</button>
                 </div>
-                <h3 data-i18n="reg.filter.type">Filter by Type</h3>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-type="all" data-i18n="reg.filter.allTypes">All Types</button>
-                    <button class="filter-btn" data-type="annual" data-i18n="reg.filter.annual">Annual Reports</button>
-                    <button class="filter-btn" data-type="quarterly" data-i18n="reg.filter.quarterly">Quarterly Reports</button>
-                    <button class="filter-btn" data-type="audit" data-i18n="reg.filter.audit">Audit Reports</button>
-                    <button class="filter-btn" data-type="regulatory" data-i18n="reg.filter.regulatory">Regulatory Filings</button>
-                    <button class="filter-btn" data-type="investor" data-i18n="reg.filter.investor">Investor Materials</button>
-                </div>
             </div>
 
             <!-- Reports List (dynamic) -->
@@ -184,7 +175,7 @@
                                 desc +
                             '</div>' +
                             '<div class="report-actions">' +
-                                '<a href="' + escapeHtml(report.path) + '" class="btn-view" target="_blank" rel="noopener"><i class="fas fa-eye"></i> <span data-i18n="btn.viewOnline">View Online</span></a>' +
+                                '<a href="' + escapeHtml(report.path) + '" class="btn-view" data-pdf="' + escapeHtml(report.path) + '"><i class="fas fa-eye"></i> <span data-i18n="btn.viewOnline">View Online</span></a>' +
                             '</div>' +
                         '</div>';
                 });
@@ -262,17 +253,6 @@
             }
         }
 
-        // Handle bfcache restore on mobile when returning from PDF viewer
-        window.addEventListener('pageshow', function(event) {
-            if (event.persisted) {
-                renderReports();
-                if (typeof window.applyTranslations === 'function') {
-                    var lang = window.getCurrentLang ? window.getCurrentLang() : (localStorage.getItem('apex-lang') || 'en');
-                    window.applyTranslations(lang);
-                }
-            }
-        });
-
         // Init
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile menu toggle
@@ -283,9 +263,17 @@
             // Render dynamic reports
             renderReports();
 
+            // PDF links: use window.open to avoid replacing page on mobile
+            document.getElementById('reports-container').addEventListener('click', function(e) {
+                var link = e.target.closest('.btn-view');
+                if (link && link.getAttribute('data-pdf')) {
+                    e.preventDefault();
+                    window.open(link.getAttribute('data-pdf'), '_blank', 'noopener');
+                }
+            });
+
             // Filter buttons
             var yearBtns = document.querySelectorAll('[data-year]');
-            var typeBtns = document.querySelectorAll('[data-type]');
 
             yearBtns.forEach(function(btn) {
                 btn.addEventListener('click', function() {
@@ -295,17 +283,6 @@
                     this.classList.add('active');
                     currentYearFilter = this.getAttribute('data-year');
                     // Reset type buttons if year changes (except initial load)
-                    renderReports();
-                });
-            });
-
-            typeBtns.forEach(function(btn) {
-                btn.addEventListener('click', function() {
-                    typeBtns.forEach(function(b) {
-                        if (b.hasAttribute('data-type')) b.classList.remove('active');
-                    });
-                    this.classList.add('active');
-                    currentTypeFilter = this.getAttribute('data-type');
                     renderReports();
                 });
             });
