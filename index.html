@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex Capital - Innovative Fund Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="reports-data.js" defer></script>
+    <script src="lang.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -18,15 +23,18 @@
                 <span>Apex Capital</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#disclosure">Disclosure</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="#disclosure" data-i18n="nav.disclosure">Disclosure</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="nav-actions">
+                <button class="lang-toggle">繁中</button>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -34,9 +42,9 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Innovating <span class="highlight">Future</span> Finance</h1>
-                <p class="subtitle">Apex Capital is a leading fund management company specializing in quantitative strategies, AI-driven investments, and sustainable growth opportunities.</p>
-                <a href="#about" class="btn-primary">Explore Our Vision</a>
+                <h1 data-i18n="hero.heading">Innovating <span class="highlight">Future</span> Finance</h1>
+                <p class="subtitle" data-i18n="hero.subtitle">Apex Capital is a leading fund management company specializing in quantitative strategies, AI-driven investments, and sustainable growth opportunities.</p>
+                <a href="#about" class="btn-primary" data-i18n="hero.cta">Explore Our Vision</a>
             </div>
             <div class="hero-visual">
                 <div class="visual-circle">
@@ -49,29 +57,29 @@
     <!-- About Us -->
     <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title">Our Core Business</h2>
-            <p class="section-subtitle">We combine cutting-edge technology with deep financial expertise to deliver superior returns for our clients.</p>
+            <h2 class="section-title" data-i18n="about.title">Our Core Business</h2>
+            <p class="section-subtitle" data-i18n="about.subtitle">We combine cutting-edge technology with deep financial expertise to deliver superior returns for our clients.</p>
             <div class="features">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-robot"></i>
                     </div>
-                    <h3>Quantitative Strategies</h3>
-                    <p>Proprietary algorithms and machine learning models identify market inefficiencies and generate alpha across asset classes.</p>
+                    <h3 data-i18n="about.card1.title">Quantitative Strategies</h3>
+                    <p data-i18n="about.card1.desc">Proprietary algorithms and machine learning models identify market inefficiencies and generate alpha across asset classes.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <h3>Sustainable Investing</h3>
-                    <p>ESG‑integrated portfolios that align financial performance with positive environmental and social impact.</p>
+                    <h3 data-i18n="about.card2.title">Sustainable Investing</h3>
+                    <p data-i18n="about.card2.desc">ESG-integrated portfolios that align financial performance with positive environmental and social impact.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Risk‑Managed Solutions</h3>
-                    <p>Dynamic hedging and portfolio construction designed to protect capital while capturing upside potential.</p>
+                    <h3 data-i18n="about.card3.title">Risk-Managed Solutions</h3>
+                    <p data-i18n="about.card3.desc">Dynamic hedging and portfolio construction designed to protect capital while capturing upside potential.</p>
                 </div>
             </div>
         </div>
@@ -80,37 +88,34 @@
     <!-- Disclosure Section -->
     <section id="disclosure" class="section disclosure">
         <div class="container">
-            <h2 class="section-title">Company Disclosures</h2>
-            <p class="section-subtitle">Transparency and compliance are at the heart of our operations.</p>
+            <h2 class="section-title" data-i18n="disclosure.title">Company Disclosures</h2>
+            <p class="section-subtitle" data-i18n="disclosure.subtitle">Transparency and compliance are at the heart of our operations.</p>
             <div class="disclosure-content">
                 <div class="disclosure-card">
-                    <h3><i class="fas fa-file-alt"></i> Regulatory Filings</h3>
-                    <ul>
-                        <li>Annual Report 2025 – <a href="#">Download PDF</a></li>
-                        <li>Quarterly Performance Update Q1 2026 – <a href="#">View Online</a></li>
-                        <li>SEC Form ADV – <a href="#">Access Here</a></li>
-                        <li>Audited Financial Statements – <a href="#">Download</a></li>
+                    <h3><i class="fas fa-file-alt"></i> <span data-i18n="disclosure.card1.title">Regulatory Filings</span></h3>
+                    <ul id="recent-reports-list">
+                        <li class="report-loading">Loading recent reports...</li>
                     </ul>
                     <a href="regulatory-filings.html" class="btn-more">
-                        <i class="fas fa-chevron-right"></i> View More Documents
+                        <i class="fas fa-chevron-right"></i> <span data-i18n="disclosure.card1.more">View More Documents</span>
                     </a>
                 </div>
                 <div class="disclosure-card">
-                    <h3><i class="fas fa-balance-scale"></i> Compliance & Governance</h3>
+                    <h3><i class="fas fa-balance-scale"></i> <span data-i18n="disclosure.card2.title">Compliance & Governance</span></h3>
                     <ul>
-                        <li>Code of Ethics – <a href="#">Read</a></li>
-                        <li>Privacy Policy – <a href="#">Learn More</a></li>
-                        <li>Conflict of Interest Policy – <a href="#">View</a></li>
-                        <li>Anti‑Money Laundering Statement – <a href="#">Details</a></li>
+                        <li><span data-i18n="disclosure.card2.li1">Code of Ethics – </span><a href="#" data-i18n="disclosure.card2.li1.link">Read</a></li>
+                        <li><span data-i18n="disclosure.card2.li2">Privacy Policy – </span><a href="#" data-i18n="disclosure.card2.li2.link">Learn More</a></li>
+                        <li><span data-i18n="disclosure.card2.li3">Conflict of Interest Policy – </span><a href="#" data-i18n="disclosure.card2.li3.link">View</a></li>
+                        <li><span data-i18n="disclosure.card2.li4">Anti-Money Laundering Statement – </span><a href="#" data-i18n="disclosure.card2.li4.link">Details</a></li>
                     </ul>
                 </div>
                 <div class="disclosure-card">
-                    <h3><i class="fas fa-bullhorn"></i> Public Announcements</h3>
+                    <h3><i class="fas fa-bullhorn"></i> <span data-i18n="disclosure.card3.title">Public Announcements</span></h3>
                     <ul>
-                        <li>New Fund Launch: Quantum Green Energy Fund – <a href="#">Press Release</a></li>
-                        <li>Partnership with Tech Innovation Hub – <a href="#">Announcement</a></li>
-                        <li>Industry Conference Participation – <a href="#">Schedule</a></li>
-                        <li>CEO Keynote: Future of Digital Assets – <a href="#">Watch Recording</a></li>
+                        <li><span data-i18n="disclosure.card3.li1">New Fund Launch: Quantum Green Energy Fund – </span><a href="#" data-i18n="disclosure.card3.li1.link">Press Release</a></li>
+                        <li><span data-i18n="disclosure.card3.li2">Partnership with Tech Innovation Hub – </span><a href="#" data-i18n="disclosure.card3.li2.link">Announcement</a></li>
+                        <li><span data-i18n="disclosure.card3.li3">Industry Conference Participation – </span><a href="#" data-i18n="disclosure.card3.li3.link">Schedule</a></li>
+                        <li><span data-i18n="disclosure.card3.li4">CEO Keynote: Future of Digital Assets – </span><a href="#" data-i18n="disclosure.card3.li4.link">Watch Recording</a></li>
                     </ul>
                 </div>
             </div>
@@ -120,53 +125,64 @@
     <!-- Contact & QR -->
     <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Connect with our team or scan the QR code for quick access.</p>
+            <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Connect with our team through the channels below.</p>
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Headquarters</h4>
-                            <p>888 Financial District, Shanghai, China 200120</p>
+                            <h4 data-i18n="contact.hq.label">Location</h4>
+                            <p data-i18n="contact.hq.value">888 Financial District, Shanghai, China 200120</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Phone</h4>
+                            <h4 data-i18n="contact.phone.label">Phone</h4>
                             <p>+86 21 6888 8888</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h4 data-i18n="contact.email.label">Email</h4>
                             <p>info@quantumcapital.com</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h4>Business Hours</h4>
-                            <p>Mon‑Fri 9:00‑18:00 (GMT+8)</p>
+                            <h4 data-i18n="contact.hours.label">Business Hours</h4>
+                            <p data-i18n="contact.hours.value">Mon-Fri 9:00-18:00 (GMT+8)</p>
                         </div>
                     </div>
                 </div>
-                <div class="qr-section">
-                    <div class="qr-card">
-                        <h3>Scan to Visit</h3>
-                        <div class="qr-placeholder">
-                            <!-- In a real project, replace with actual QR code image -->
-                            <div class="qr-code">
-                                <i class="fas fa-qrcode"></i>
-                            </div>
-                            <p>Scan this QR code to visit our mobile site or add contact.</p>
-                        </div>
-                        <div class="qr-links">
-                            <a href="#"><i class="fab fa-weixin"></i> WeChat</a>
-                            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                            <a href="#"><i class="fab fa-weibo"></i> Weibo</a>
+                <div class="social-section">
+                    <div class="social-card">
+                        <h3 data-i18n="contact.social.title">Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="https://t.me/ApexCapital" target="_blank" class="social-link telegram">
+                                <div class="social-label">
+                                    <i class="fab fa-telegram"></i>
+                                    <span>Telegram</span>
+                                </div>
+                                <div class="social-account">@ApexCapital</div>
+                            </a>
+                            <a href="https://wa.me/862168888888" target="_blank" class="social-link whatsapp">
+                                <div class="social-label">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </div>
+                                <div class="social-account">+86 21 6888 8888</div>
+                            </a>
+                            <a href="#" class="social-link wechat">
+                                <div class="social-label">
+                                    <i class="fab fa-weixin"></i>
+                                    <span>WeChat</span>
+                                </div>
+                                <div class="social-account">ApexCapital-Official</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -181,17 +197,70 @@
                 <div class="footer-logo">
                     <i class="fas fa-chart-line"></i> Apex Capital
                 </div>
-                <p class="footer-tagline">Driving financial innovation with integrity and technology.</p>
-                <p class="copyright">&copy; 2026 Apex Capital Management Ltd. All rights reserved. | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#disclosure">Disclosures</a></p>
+                <p class="footer-tagline" data-i18n="footer.tagline">Driving financial innovation with integrity and technology.</p>
+                <p class="copyright">&copy; 2026 Apex Capital Management Ltd. <span data-i18n="footer.rights">All rights reserved.</span> | <a href="#" data-i18n="footer.privacy">Privacy</a> | <a href="#" data-i18n="footer.terms">Terms</a> | <a href="#disclosure" data-i18n="footer.disclosures">Disclosures</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for mobile menu -->
+    <!-- JavaScript for mobile menu + recent reports -->
     <script>
+        // Mobile menu toggle
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
+
+        // Render recent 4 reports from REGULATORY_REPORTS
+        document.addEventListener('DOMContentLoaded', function() {
+            var list = document.getElementById('recent-reports-list');
+            if (!list) return;
+
+            var reports = (typeof REGULATORY_REPORTS !== 'undefined') ? REGULATORY_REPORTS : [];
+
+            if (reports.length === 0) {
+                list.innerHTML = '<li class="report-loading">No documents found. Add files to regulatory-docs/ folder.</li>';
+                return;
+            }
+
+            // Show newest 4 items
+            var recent = reports.slice(0, 4);
+            var html = '';
+            recent.forEach(function(r) {
+                var ext = (r.filename || '').split('.').pop().toLowerCase();
+                var iconMap = {
+                    pdf: 'fa-file-pdf',
+                    doc: 'fa-file-word', docx: 'fa-file-word',
+                    xls: 'fa-file-excel', xlsx: 'fa-file-excel', csv: 'fa-file-csv',
+                    ppt: 'fa-file-powerpoint', pptx: 'fa-file-powerpoint',
+                    png: 'fa-file-image', jpg: 'fa-file-image', jpeg: 'fa-file-image', gif: 'fa-file-image',
+                    zip: 'fa-file-archive', rar: 'fa-file-archive',
+                    txt: 'fa-file-alt', md: 'fa-file-alt'
+                };
+                var icon = iconMap[ext] || 'fa-file';
+
+                html +=
+                    '<li>' +
+                        '<i class="fas ' + icon + ' recent-icon"></i> ' +
+                        '<span>' + escapeHtml(r.title) + '</span>' +
+                        '<small class="recent-date">' + escapeHtml(r.date) + '</small>' +
+                        ' – ' +
+                        '<a href="' + escapeHtml(r.path) + '" target="_blank">View</a>' +
+                    '</li>';
+            });
+            list.innerHTML = html;
+
+            // Re-apply translations after dynamic render
+            if (typeof window.applyTranslations === 'function') {
+                var lang = window.getCurrentLang ? window.getCurrentLang() : (localStorage.getItem('apex-lang') || 'en');
+                window.applyTranslations(lang);
+            }
+        });
+
+        function escapeHtml(str) {
+            var div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
     </script>
 </body>
 </html>

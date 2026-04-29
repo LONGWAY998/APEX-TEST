@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regulatory Filings & Reports - Apex Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="reports-data.js" defer></script>
+    <script src="lang.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -18,27 +23,30 @@
                 <span>Apex Capital</span>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#disclosure" class="active">Disclosure</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="index.html#about" data-i18n="nav.about">About Us</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="index.html#disclosure" class="active" data-i18n="nav.disclosure">Disclosure</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="nav-actions">
+                <button class="lang-toggle">繁中</button>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Regulatory Filings & Financial Reports</h1>
-            <p class="subtitle">Complete archive of all regulatory documents, financial statements, audit reports, and investor materials.</p>
+            <h1 data-i18n="reg.pageTitle">Regulatory Filings & Financial Reports</h1>
+            <p class="subtitle" data-i18n="reg.pageSubtitle">Complete archive of all regulatory documents, financial statements, audit reports, and investor materials.</p>
             <div class="breadcrumb">
-                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
-                <a href="index.html#disclosure">Disclosure</a> <i class="fas fa-chevron-right"></i>
-                <span>Regulatory Filings</span>
+                <a href="index.html" data-i18n="reg.breadcrumb.home">Home</a> <i class="fas fa-chevron-right"></i>
+                <a href="index.html#disclosure" data-i18n="reg.breadcrumb.disclosure">Disclosure</a> <i class="fas fa-chevron-right"></i>
+                <span data-i18n="reg.breadcrumb.current">Regulatory Filings</span>
             </div>
         </div>
     </section>
@@ -48,185 +56,42 @@
         <div class="container">
             <!-- Filters -->
             <div class="filters">
-                <h3>Filter by Year</h3>
+                <h3 data-i18n="reg.filter.year">Filter by Year</h3>
                 <div class="filter-buttons">
-                    <button class="filter-btn active" data-year="all">All Years</button>
+                    <button class="filter-btn active" data-year="all" data-i18n="reg.filter.allYears">All Years</button>
                     <button class="filter-btn" data-year="2026">2026</button>
                     <button class="filter-btn" data-year="2025">2025</button>
                     <button class="filter-btn" data-year="2024">2024</button>
                 </div>
-                <h3>Filter by Type</h3>
+                <h3 data-i18n="reg.filter.type">Filter by Type</h3>
                 <div class="filter-buttons">
-                    <button class="filter-btn active" data-type="all">All Types</button>
-                    <button class="filter-btn" data-type="annual">Annual Reports</button>
-                    <button class="filter-btn" data-type="quarterly">Quarterly Reports</button>
-                    <button class="filter-btn" data-type="audit">Audit Reports</button>
-                    <button class="filter-btn" data-type="regulatory">Regulatory Filings</button>
-                    <button class="filter-btn" data-type="investor">Investor Materials</button>
+                    <button class="filter-btn active" data-type="all" data-i18n="reg.filter.allTypes">All Types</button>
+                    <button class="filter-btn" data-type="annual" data-i18n="reg.filter.annual">Annual Reports</button>
+                    <button class="filter-btn" data-type="quarterly" data-i18n="reg.filter.quarterly">Quarterly Reports</button>
+                    <button class="filter-btn" data-type="audit" data-i18n="reg.filter.audit">Audit Reports</button>
+                    <button class="filter-btn" data-type="regulatory" data-i18n="reg.filter.regulatory">Regulatory Filings</button>
+                    <button class="filter-btn" data-type="investor" data-i18n="reg.filter.investor">Investor Materials</button>
                 </div>
             </div>
 
-            <!-- Reports List -->
-            <div class="reports-grid">
-                <!-- 2026 Reports -->
-                <div class="report-year-group" data-year="2026">
-                    <h2 class="year-title">2026 Reports</h2>
-                    <div class="report-cards">
-                        <div class="report-card" data-type="quarterly">
-                            <div class="report-icon">
-                                <i class="fas fa-file-invoice-dollar"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>Q1 2026 Quarterly Report</h3>
-                                <p class="report-meta">Published: March 31, 2026 | File size: 2.4 MB</p>
-                                <p>Complete financial results and operational highlights for the first quarter of 2026.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
+            <!-- Reports List (dynamic) -->
+            <div class="reports-grid" id="reports-container">
+                <!-- Dynamically rendered by JavaScript -->
+            </div>
 
-                        <div class="report-card" data-type="regulatory">
-                            <div class="report-icon">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>SEC Form ADV (2026 Update)</h3>
-                                <p class="report-meta">Published: February 15, 2026 | File size: 1.8 MB</p>
-                                <p>Annual updating amendment to Form ADV filed with the Securities and Exchange Commission.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
-
-                        <div class="report-card" data-type="investor">
-                            <div class="report-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>2026 Investor Day Presentation</h3>
-                                <p class="report-meta">Published: January 20, 2026 | File size: 5.2 MB</p>
-                                <p>Strategic outlook, growth initiatives, and financial targets presented to investors.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
-
-                        <!-- Test PDF Document -->
-                        <div class="report-card" data-type="test">
-                            <div class="report-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>Test PDF Document (test v)</h3>
-                                <p class="report-meta">Published: April 22, 2026 | File size: 458 bytes</p>
-                                <p>This is a test PDF document for verifying the document display functionality.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
-                    </div>
+            <!-- No Results Message -->
+            <div class="no-results" id="no-results" style="display:none;">
+                <div class="notice-icon">
+                    <i class="fas fa-search"></i>
                 </div>
-
-                <!-- 2025 Reports -->
-                <div class="report-year-group" data-year="2025">
-                    <h2 class="year-title">2025 Reports</h2>
-                    <div class="report-cards">
-                        <div class="report-card" data-type="annual">
-                            <div class="report-icon">
-                                <i class="fas fa-book"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>Annual Report 2025</h3>
-                                <p class="report-meta">Published: March 15, 2026 | File size: 8.7 MB</p>
-                                <p>Comprehensive review of 2025 performance, financial statements, and corporate governance.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
-
-                        <div class="report-card" data-type="audit">
-                            <div class="report-icon">
-                                <i class="fas fa-search-dollar"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>Audited Financial Statements 2025</h3>
-                                <p class="report-meta">Published: February 28, 2026 | File size: 3.1 MB</p>
-                                <p>Independent auditor's report and complete financial statements for fiscal year 2025.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
-
-                        <div class="report-card" data-type="quarterly">
-                            <div class="report-icon">
-                                <i class="fas fa-chart-bar"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>Q4 2025 Quarterly Report</h3>
-                                <p class="report-meta">Published: January 30, 2026 | File size: 2.6 MB</p>
-                                <p>Fourth quarter financial results and year-end performance summary.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
-
-                        <div class="report-card" data-type="quarterly">
-                            <div class="report-icon">
-                                <i class="fas fa-chart-bar"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>Q3 2025 Quarterly Report</h3>
-                                <p class="report-meta">Published: October 31, 2025 | File size: 2.5 MB</p>
-                                <p>Third quarter financial performance and operational updates.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2024 Reports -->
-                <div class="report-year-group" data-year="2024">
-                    <h2 class="year-title">2024 Reports</h2>
-                    <div class="report-cards">
-                        <div class="report-card" data-type="annual">
-                            <div class="report-icon">
-                                <i class="fas fa-book"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>Annual Report 2024</h3>
-                                <p class="report-meta">Published: March 10, 2025 | File size: 7.9 MB</p>
-                                <p>Annual report detailing 2024 financial results and strategic accomplishments.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
-
-                        <div class="report-card" data-type="regulatory">
-                            <div class="report-icon">
-                                <i class="fas fa-gavel"></i>
-                            </div>
-                            <div class="report-info">
-                                <h3>SEC Form ADV (2024)</h3>
-                                <p class="report-meta">Published: February 10, 2025 | File size: 1.7 MB</p>
-                                <p>Annual Form ADV filing with the Securities and Exchange Commission.</p>
-                            </div>
-                            <div class="report-actions">
-                                <a href="reports/test%20v.pdf" class="btn-view" target="_blank"><i class="fas fa-eye"></i> View Online</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="notice-content">
+                    <h3 data-i18n="reg.noMatch">No Matching Reports</h3>
+                    <p data-i18n="reg.noMatch.desc">No reports match the current filter criteria. Try selecting a different year or type.</p>
                 </div>
             </div>
+
+            <!-- Last Updated -->
+            <div class="last-updated" id="last-updated"></div>
 
             <!-- Archive Notice -->
             <div class="archive-notice">
@@ -234,8 +99,8 @@
                     <i class="fas fa-archive"></i>
                 </div>
                 <div class="notice-content">
-                    <h3>Historical Archives</h3>
-                    <p>For reports dated prior to 2024, please contact our Investor Relations department at <a href="mailto:ir@quantumcapital.com">ir@quantumcapital.com</a> or call +86 21 6888 8888 ext. 201.</p>
+                    <h3 data-i18n="reg.archive.title">Historical Archives</h3>
+                    <p><span data-i18n="reg.archive.desc">For reports dated prior to 2024, please contact our Investor Relations department at</span> <a href="mailto:ir@quantumcapital.com">ir@quantumcapital.com</a> <span data-i18n="reg.archive.contact">or call +86 21 6888 8888 ext. 201.</span></p>
                 </div>
             </div>
         </div>
@@ -248,65 +113,193 @@
                 <div class="footer-logo">
                     <i class="fas fa-chart-line"></i> Apex Capital
                 </div>
-                <p class="footer-tagline">Driving financial innovation with integrity and technology.</p>
-                <p class="copyright">&copy; 2026 Apex Capital Management Ltd. All rights reserved. | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="index.html#disclosure">Disclosures</a></p>
+                <p class="footer-tagline" data-i18n="footer.tagline">Driving financial innovation with integrity and technology.</p>
+                <p class="copyright">&copy; 2026 Apex Capital Management Ltd. <span data-i18n="footer.rights">All rights reserved.</span> | <a href="#" data-i18n="footer.privacy">Privacy</a> | <a href="#" data-i18n="footer.terms">Terms</a> | <a href="index.html#disclosure" data-i18n="footer.disclosures">Disclosures</a></p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-        // Mobile menu toggle
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
+        // Icon mapping for report types
+        function getFileIcon(filename) {
+            var ext = filename.split('.').pop().toLowerCase();
+            var icons = {
+                pdf: 'fa-file-pdf',
+                doc: 'fa-file-word', docx: 'fa-file-word',
+                xls: 'fa-file-excel', xlsx: 'fa-file-excel', csv: 'fa-file-csv',
+                ppt: 'fa-file-powerpoint', pptx: 'fa-file-powerpoint',
+                png: 'fa-file-image', jpg: 'fa-file-image', jpeg: 'fa-file-image', gif: 'fa-file-image', svg: 'fa-file-image',
+                zip: 'fa-file-archive', rar: 'fa-file-archive', '7z': 'fa-file-archive',
+                txt: 'fa-file-alt', md: 'fa-file-alt',
+                html: 'fa-file-code', xml: 'fa-file-code', json: 'fa-file-code'
+            };
+            return icons[ext] || 'fa-file';
+        }
 
-        // Filter functionality
+        var currentYearFilter = 'all';
+        var currentTypeFilter = 'all';
+
+        function renderReports() {
+            var container = document.getElementById('reports-container');
+            var reports = (typeof REGULATORY_REPORTS !== 'undefined') ? REGULATORY_REPORTS : [];
+
+            if (reports.length === 0) {
+                container.innerHTML = '<div class="no-results"><div class="notice-content"><h3 data-i18n="reg.noData">No Reports Found</h3><p data-i18n="reg.noData.desc">Add PDF files to the regulatory-docs folder on your computer, then run <code>node generate-reports.js</code> to update.</p></div></div>';
+                return;
+            }
+
+            // Group by year
+            var years = {};
+            reports.forEach(function(r) {
+                if (!years[r.year]) years[r.year] = [];
+                years[r.year].push(r);
+            });
+
+            // Sort years descending
+            var yearKeys = Object.keys(years).sort(function(a, b) { return b - a; });
+
+            var html = '';
+            yearKeys.forEach(function(year) {
+                var yearReports = years[year];
+                var yearHidden = (currentYearFilter !== 'all' && currentYearFilter !== year) ? ' style="display:none"' : '';
+                var hasVisible = false;
+
+                var cardsHtml = '';
+                yearReports.forEach(function(report) {
+                    var typeHidden = (currentTypeFilter !== 'all' && currentTypeFilter !== report.type) ? ' style="display:none"' : '';
+                    if (currentTypeFilter === 'all' || currentTypeFilter === report.type) hasVisible = true;
+
+                    var icon = getFileIcon(report.filename);
+                    var desc = report.description ? '<p>' + escapeHtml(report.description) + '</p>' : '';
+
+                    cardsHtml +=
+                        '<div class="report-card" data-year="' + report.year + '" data-type="' + report.type + '"' + typeHidden + '>' +
+                            '<div class="report-icon">' +
+                                '<i class="fas ' + icon + '"></i>' +
+                            '</div>' +
+                            '<div class="report-info">' +
+                                '<h3>' + escapeHtml(report.title) + '</h3>' +
+                                '<p class="report-meta"><span data-i18n="published">Published</span>: ' + escapeHtml(report.date) + ' | File size: ' + escapeHtml(report.size) + '</p>' +
+                                desc +
+                            '</div>' +
+                            '<div class="report-actions">' +
+                                '<a href="' + escapeHtml(report.path) + '" class="btn-view" target="_blank"><i class="fas fa-eye"></i> <span data-i18n="btn.viewOnline">View Online</span></a>' +
+                            '</div>' +
+                        '</div>';
+                });
+
+                var groupDisplay = (yearHidden === '' && (currentTypeFilter === 'all' || hasVisible)) ? '' : ' style="display:none"';
+
+                html +=
+                    '<div class="report-year-group" data-year="' + year + '"' + groupDisplay + '>' +
+                        '<h2 class="year-title">' + year + ' Reports</h2>' +
+                        '<div class="report-cards">' +
+                            cardsHtml +
+                        '</div>' +
+                    '</div>';
+            });
+
+            container.innerHTML = html;
+
+            // Show no-results if nothing visible
+            var visibleCards = container.querySelectorAll('.report-card[style*="display:none"]');
+            var totalCards = container.querySelectorAll('.report-card');
+            var noResults = document.getElementById('no-results');
+            if (totalCards.length > 0 && visibleCards.length === totalCards.length) {
+                noResults.style.display = 'flex';
+            } else {
+                noResults.style.display = 'none';
+            }
+
+            // Re-apply translations after rendering
+            if (typeof window.applyTranslations === 'function') {
+                var lang = window.getCurrentLang ? window.getCurrentLang() : (localStorage.getItem('apex-lang') || 'en');
+                window.applyTranslations(lang);
+            }
+        }
+
+        function escapeHtml(str) {
+            var div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function applyFilters() {
+            var container = document.getElementById('reports-container');
+            var yearGroups = container.querySelectorAll('.report-year-group');
+            var noResults = document.getElementById('no-results');
+            var anyVisible = false;
+
+            yearGroups.forEach(function(group) {
+                var year = group.getAttribute('data-year');
+                var cards = group.querySelectorAll('.report-card');
+                var groupVisible = false;
+
+                cards.forEach(function(card) {
+                    var cardYear = card.getAttribute('data-year');
+                    var cardType = card.getAttribute('data-type');
+                    var yearMatch = currentYearFilter === 'all' || currentYearFilter === cardYear;
+                    var typeMatch = currentTypeFilter === 'all' || currentTypeFilter === cardType;
+                    var visible = yearMatch && typeMatch;
+
+                    card.style.display = visible ? 'flex' : 'none';
+                    if (visible) groupVisible = true;
+                });
+
+                group.style.display = groupVisible ? 'block' : 'none';
+                if (groupVisible) anyVisible = true;
+            });
+
+            noResults.style.display = anyVisible ? 'none' : 'flex';
+        }
+
+        // Update last-updated timestamp
+        function updateTimestamp() {
+            var el = document.getElementById('last-updated');
+            if (el) {
+                el.textContent = 'Data last refreshed: ' + new Date().toLocaleString();
+            }
+        }
+
+        // Init
         document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const reportCards = document.querySelectorAll('.report-card');
-            const yearGroups = document.querySelectorAll('.report-year-group');
+            // Mobile menu toggle
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.toggle('active');
+            });
 
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Update active state
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Render dynamic reports
+            renderReports();
+
+            // Filter buttons
+            var yearBtns = document.querySelectorAll('[data-year]');
+            var typeBtns = document.querySelectorAll('[data-type]');
+
+            yearBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    yearBtns.forEach(function(b) {
+                        if (b.hasAttribute('data-year')) b.classList.remove('active');
+                    });
                     this.classList.add('active');
-
-                    const year = this.dataset.year;
-                    const type = this.dataset.type;
-
-                    // Filter by year
-                    if (year && year !== 'all') {
-                        yearGroups.forEach(group => {
-                            if (group.dataset.year === year) {
-                                group.style.display = 'block';
-                            } else {
-                                group.style.display = 'none';
-                            }
-                        });
-                    } else {
-                        yearGroups.forEach(group => group.style.display = 'block');
-                    }
-
-                    // Filter by type within visible years
-                    if (type && type !== 'all') {
-                        reportCards.forEach(card => {
-                            if (card.dataset.type === type && card.closest('.report-year-group').style.display !== 'none') {
-                                card.style.display = 'flex';
-                            } else {
-                                card.style.display = 'none';
-                            }
-                        });
-                    } else {
-                        reportCards.forEach(card => {
-                            if (card.closest('.report-year-group').style.display !== 'none') {
-                                card.style.display = 'flex';
-                            }
-                        });
-                    }
+                    currentYearFilter = this.getAttribute('data-year');
+                    // Reset type buttons if year changes (except initial load)
+                    renderReports();
                 });
             });
+
+            typeBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    typeBtns.forEach(function(b) {
+                        if (b.hasAttribute('data-type')) b.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    currentTypeFilter = this.getAttribute('data-type');
+                    renderReports();
+                });
+            });
+
+            updateTimestamp();
         });
     </script>
 </body>
