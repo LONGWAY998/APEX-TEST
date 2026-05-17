@@ -216,35 +216,6 @@
             return div.innerHTML;
         }
 
-        function applyFilters() {
-            var container = document.getElementById('reports-container');
-            var yearGroups = container.querySelectorAll('.report-year-group');
-            var noResults = document.getElementById('no-results');
-            var anyVisible = false;
-
-            yearGroups.forEach(function(group) {
-                var year = group.getAttribute('data-year');
-                var cards = group.querySelectorAll('.report-card');
-                var groupVisible = false;
-
-                cards.forEach(function(card) {
-                    var cardYear = card.getAttribute('data-year');
-                    var cardType = card.getAttribute('data-type');
-                    var yearMatch = currentYearFilter === 'all' || currentYearFilter === cardYear;
-                    var typeMatch = currentTypeFilter === 'all' || currentTypeFilter === cardType;
-                    var visible = yearMatch && typeMatch;
-
-                    card.style.display = visible ? 'flex' : 'none';
-                    if (visible) groupVisible = true;
-                });
-
-                group.style.display = groupVisible ? 'block' : 'none';
-                if (groupVisible) anyVisible = true;
-            });
-
-            noResults.style.display = anyVisible ? 'none' : 'flex';
-        }
-
         // Update last-updated timestamp
         function updateTimestamp() {
             var el = document.getElementById('last-updated');

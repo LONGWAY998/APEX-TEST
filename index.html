@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="reports-data.js" defer></script>
     <script src="lang.js" defer></script>
@@ -24,8 +24,8 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#products" data-i18n="nav.products">Products</a></li>
                 <li><a href="#about" data-i18n="nav.about">About Us</a></li>
-                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
                 <li><a href="#disclosure" data-i18n="nav.disclosure">Disclosure</a></li>
                 <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
@@ -40,16 +40,164 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-certificate"></i> FJMIN818815839K
+                </div>
                 <h1 data-i18n="hero.heading">Innovating <span class="highlight">Future</span> Finance</h1>
                 <p class="subtitle" data-i18n="hero.subtitle">Apex Capital is a leading fund management company specializing in quantitative strategies, AI-driven investments, and sustainable growth opportunities.</p>
-                <a href="#about" class="btn-primary" data-i18n="hero.cta">Explore Our Vision</a>
+                <div class="hero-actions">
+                    <a href="#products" class="btn-primary" data-i18n="hero.cta">Explore Our Vision</a>
+                    <a href="fund-product.html" class="btn-outline" data-i18n="hero.cta2">View Full Prospectus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-value">82<span class="stat-unit" data-i18n="hero.stat1.unit">B</span></span>
+                        <span class="stat-label" data-i18n="hero.stat1.label">AUM (RMB)</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-value">18.5<span class="stat-unit">%</span></span>
+                        <span class="stat-label" data-i18n="hero.stat2.label">Annual Return Target</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-value">2001</span>
+                        <span class="stat-label" data-i18n="hero.stat3.label">Established</span>
+                    </div>
+                </div>
             </div>
             <div class="hero-visual">
-                <div class="visual-circle">
-                    <i class="fas fa-chart-network"></i>
+                <div class="visual-ring"></div>
+                <div class="visual-ring-2"></div>
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <span data-i18n="hero.card.title">Core Product</span>
+                    </div>
+                    <div class="hero-card-body">
+                        <div class="hero-card-row">
+                            <span class="hcr-label" data-i18n="hero.card.mgmtFee">Mgmt Fee</span>
+                            <span class="hcr-value">0.60%</span>
+                        </div>
+                        <div class="hero-card-row">
+                            <span class="hcr-label" data-i18n="hero.card.custodyFee">Custody Fee</span>
+                            <span class="hcr-value">0.10%</span>
+                        </div>
+                        <div class="hero-card-row">
+                            <span class="hcr-label" data-i18n="hero.card.min">Min Invest</span>
+                            <span class="hcr-value">$5,000</span>
+                        </div>
+                        <div class="hero-card-row">
+                            <span class="hcr-label" data-i18n="hero.card.purchase">Purchase</span>
+                            <span class="hcr-value" data-i18n="hero.card.daily">Daily Open</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="products.tag">Core Products</span>
+                <h2 class="section-title" data-i18n="products.title">Our Products</h2>
+                <p class="section-subtitle" data-i18n="products.subtitle">Focused on bills and bonds, delivering lasting value through stable strategies.</p>
+            </div>
+
+            <!-- Featured Fund Product -->
+            <div class="featured-product">
+                <div class="featured-badge">
+                    <i class="fas fa-star"></i> <span data-i18n="products.featured.badge">Flagship Product</span>
+                </div>
+                <div class="featured-content">
+                    <div class="featured-left">
+                        <div class="fp-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3 class="fp-name" data-i18n="fund.name">Fujian Shang Jin Nong Sui Stable Income Commercial Paper & Bond Fund</h3>
+                        <div class="fp-tags">
+                            <span data-i18n="fund.tag1">Hybrid</span>
+                            <span data-i18n="fund.tag2">Note-Type</span>
+                            <span data-i18n="fund.tag3">Open-Ended</span>
+                            <span data-i18n="fund.tag4">Daily Trading</span>
+                        </div>
+                        <p class="fp-desc" data-i18n="products.featured.desc">≥90% allocation to high-grade credit, interest rate bonds & interbank CDs. Leveraging Fujian regional advantages to select AAA+ notes from state-owned banks and institutional platforms. Target annualized return 18%—19.5%.</p>
+                        <div class="fp-highlights">
+                            <div class="fph-item">
+                                <i class="fas fa-shield-haltered"></i>
+                                <div>
+                                    <strong data-i18n="products.fph1.title">AAA+ Credit Rating</strong>
+                                    <span data-i18n="products.fph1.desc">State-owned banks & institutional platforms only</span>
+                                </div>
+                            </div>
+                            <div class="fph-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <strong data-i18n="products.fph2.title">13.5%—18.5% Annualized</strong>
+                                    <span data-i18n="products.fph2.desc">Drawdown control ≤ 3%</span>
+                                </div>
+                            </div>
+                            <div class="fph-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong data-i18n="products.fph3.title">T+6 Flexible Redemption</strong>
+                                    <span data-i18n="products.fph3.desc">No redemption fee after 30 days</span>
+                                </div>
+                            </div>
+                            <div class="fph-item">
+                                <i class="fas fa-coins"></i>
+                                <div>
+                                    <strong data-i18n="products.fph4.title">$5,000 Minimum</strong>
+                                    <span data-i18n="products.fph4.desc">Low entry, suitable for regular plans</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="fund-product.html" class="btn-primary" data-i18n="fund.viewFull">
+                            <i class="fas fa-book-open"></i> View Full Prospectus
+                        </a>
+                    </div>
+                    <div class="featured-right">
+                        <div class="featured-table">
+                            <h4><i class="fas fa-table"></i> <span data-i18n="fund.facts.title">Key Facts at a Glance</span></h4>
+                            <div class="ft-row"><span data-i18n="fund.facts.code">Product Code</span><span>闽:FJMIN818815839K</span></div>
+                            <div class="ft-row"><span data-i18n="fund.facts.mgmtFee">Management Fee</span><span>0.60% / yr</span></div>
+                            <div class="ft-row"><span data-i18n="fund.facts.custodyFee">Custody Fee</span><span>0.10% / yr</span></div>
+                            <div class="ft-row"><span data-i18n="fund.facts.min">Min Subscription</span><span>$5,000</span></div>
+                            <div class="ft-row"><span data-i18n="fund.facts.lockup">Lock-up Period</span><span data-i18n="fund.facts.lockup.val">None</span></div>
+                            <div class="ft-row"><span data-i18n="fund.facts.redemption">Redemption Fee</span><span data-i18n="fund.facts.redemption.short">≥30d free</span></div>
+                            <div class="ft-row"><span data-i18n="fund.manager.label">Manager</span><span data-i18n="fund.manager.short">FJ Shang Jin Nong Sui</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Services -->
+            <div class="section-header" style="margin-top: 80px;">
+                <span class="section-tag" data-i18n="services.tag">More Services</span>
+                <h2 class="section-title" data-i18n="services.title">Professional Fund Management</h2>
+            </div>
+            <div class="service-cards">
+                <a href="services.html" class="service-card-new">
+                    <div class="scn-icon"><i class="fas fa-robot"></i></div>
+                    <h3 data-i18n="services.card1.title">Quantitative Strategies</h3>
+                    <p data-i18n="services.card1.desc">Proprietary algorithms and machine learning models identify market inefficiencies and generate alpha.</p>
+                    <span class="scn-link"><span data-i18n="services.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="services.html" class="service-card-new">
+                    <div class="scn-icon"><i class="fas fa-leaf"></i></div>
+                    <h3 data-i18n="services.card2.title">Sustainable Investing</h3>
+                    <p data-i18n="services.card2.desc">ESG-integrated portfolios that align financial performance with positive environmental and social impact.</p>
+                    <span class="scn-link"><span data-i18n="services.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="services.html" class="service-card-new">
+                    <div class="scn-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-i18n="services.card3.title">Risk-Managed Solutions</h3>
+                    <p data-i18n="services.card3.desc">Dynamic hedging and portfolio construction designed to protect capital while capturing upside potential.</p>
+                    <span class="scn-link"><span data-i18n="services.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></span>
+                </a>
             </div>
         </div>
     </section>
@@ -57,27 +205,24 @@
     <!-- About Us -->
     <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title" data-i18n="about.title">Our Core Business</h2>
-            <p class="section-subtitle" data-i18n="about.subtitle">We combine cutting-edge technology with deep financial expertise to deliver superior returns for our clients.</p>
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about.tag">About Us</span>
+                <h2 class="section-title" data-i18n="about.title">Our Core Business</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">We combine cutting-edge technology with deep financial expertise to deliver superior returns for our clients.</p>
+            </div>
             <div class="features">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-robot"></i></div>
                     <h3 data-i18n="about.card1.title">Quantitative Strategies</h3>
                     <p data-i18n="about.card1.desc">Proprietary algorithms and machine learning models identify market inefficiencies and generate alpha across asset classes.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
                     <h3 data-i18n="about.card2.title">Sustainable Investing</h3>
                     <p data-i18n="about.card2.desc">ESG-integrated portfolios that align financial performance with positive environmental and social impact.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3 data-i18n="about.card3.title">Risk-Managed Solutions</h3>
                     <p data-i18n="about.card3.desc">Dynamic hedging and portfolio construction designed to protect capital while capturing upside potential.</p>
                 </div>
@@ -88,8 +233,11 @@
     <!-- Disclosure Section -->
     <section id="disclosure" class="section disclosure">
         <div class="container">
-            <h2 class="section-title" data-i18n="disclosure.title">Company Disclosures</h2>
-            <p class="section-subtitle" data-i18n="disclosure.subtitle">Transparency and compliance are at the heart of our operations.</p>
+            <div class="section-header">
+                <span class="section-tag" data-i18n="disclosure.tag">Disclosure</span>
+                <h2 class="section-title" data-i18n="disclosure.title">Company Disclosures</h2>
+                <p class="section-subtitle" data-i18n="disclosure.subtitle">Transparency and compliance are at the heart of our operations.</p>
+            </div>
             <div class="disclosure-content">
                 <div class="disclosure-card">
                     <h3><i class="fas fa-file-alt"></i> <span data-i18n="disclosure.card1.title">Regulatory Filings</span></h3>
@@ -122,11 +270,14 @@
         </div>
     </section>
 
-    <!-- Contact & QR -->
+    <!-- Contact -->
     <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
-            <p class="section-subtitle" data-i18n="contact.subtitle">Connect with our team through the channels below.</p>
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact.tag">Contact</span>
+                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Connect with our team through the channels below.</p>
+            </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="info-item">
@@ -163,24 +314,15 @@
                         <h3 data-i18n="contact.social.title">Connect With Us</h3>
                         <div class="social-links">
                             <a href="https://t.me/ApexCapital" target="_blank" class="social-link telegram">
-                                <div class="social-label">
-                                    <i class="fab fa-telegram"></i>
-                                    <span>Telegram</span>
-                                </div>
+                                <div class="social-label"><i class="fab fa-telegram"></i><span>Telegram</span></div>
                                 <div class="social-account">@ApexCapital</div>
                             </a>
                             <a href="https://wa.me/862168888888" target="_blank" class="social-link whatsapp">
-                                <div class="social-label">
-                                    <i class="fab fa-whatsapp"></i>
-                                    <span>WhatsApp</span>
-                                </div>
+                                <div class="social-label"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></div>
                                 <div class="social-account">+86 21 6888 8888</div>
                             </a>
                             <a href="#" class="social-link wechat">
-                                <div class="social-label">
-                                    <i class="fab fa-weixin"></i>
-                                    <span>WeChat</span>
-                                </div>
+                                <div class="social-label"><i class="fab fa-weixin"></i><span>WeChat</span></div>
                                 <div class="social-account">ApexCapital-Official</div>
                             </a>
                         </div>
@@ -194,70 +336,38 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-chart-line"></i> Apex Capital
-                </div>
+                <div class="footer-logo"><i class="fas fa-chart-line"></i> Apex Capital</div>
                 <p class="footer-tagline" data-i18n="footer.tagline">Driving financial innovation with integrity and technology.</p>
                 <p class="copyright">&copy; 2026 Apex Capital Management Ltd. <span data-i18n="footer.rights">All rights reserved.</span> | <a href="#" data-i18n="footer.privacy">Privacy</a> | <a href="#" data-i18n="footer.terms">Terms</a> | <a href="#disclosure" data-i18n="footer.disclosures">Disclosures</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for mobile menu + recent reports -->
     <script>
-        // Mobile menu toggle
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
 
-        // Render recent 4 reports from REGULATORY_REPORTS
         document.addEventListener('DOMContentLoaded', function() {
             var list = document.getElementById('recent-reports-list');
             if (!list) return;
-
             var reports = (typeof REGULATORY_REPORTS !== 'undefined') ? REGULATORY_REPORTS : [];
-
             if (reports.length === 0) {
                 list.innerHTML = '<li class="report-loading">No documents found. Add files to regulatory-docs/ folder.</li>';
                 return;
             }
-
-            // Show newest 4 items
             var recent = reports.slice(0, 4);
             var html = '';
             recent.forEach(function(r) {
                 var ext = (r.filename || '').split('.').pop().toLowerCase();
-                var iconMap = {
-                    pdf: 'fa-file-pdf',
-                    doc: 'fa-file-word', docx: 'fa-file-word',
-                    xls: 'fa-file-excel', xlsx: 'fa-file-excel', csv: 'fa-file-csv',
-                    ppt: 'fa-file-powerpoint', pptx: 'fa-file-powerpoint',
-                    png: 'fa-file-image', jpg: 'fa-file-image', jpeg: 'fa-file-image', gif: 'fa-file-image',
-                    zip: 'fa-file-archive', rar: 'fa-file-archive',
-                    txt: 'fa-file-alt', md: 'fa-file-alt'
-                };
+                var iconMap = { pdf:'fa-file-pdf', doc:'fa-file-word', docx:'fa-file-word', xls:'fa-file-excel', xlsx:'fa-file-excel', csv:'fa-file-csv', ppt:'fa-file-powerpoint', pptx:'fa-file-powerpoint', png:'fa-file-image', jpg:'fa-file-image', jpeg:'fa-file-image', gif:'fa-file-image', zip:'fa-file-archive', rar:'fa-file-archive', txt:'fa-file-alt', md:'fa-file-alt' };
                 var icon = iconMap[ext] || 'fa-file';
-
-                html +=
-                    '<li>' +
-                        '<i class="fas ' + icon + ' recent-icon"></i> ' +
-                        '<span>' + escapeHtml(r.title) + '</span>' +
-                        '<small class="recent-date">' + escapeHtml(r.date) + '</small>' +
-                        ' – ' +
-                        '<a href="' + escapeHtml(r.path) + '" class="pdf-link">View</a>' +
-                    '</li>';
+                html += '<li><i class="fas ' + icon + ' recent-icon"></i> <span>' + escapeHtml(r.title) + '</span><small class="recent-date">' + escapeHtml(r.date) + '</small> – <a href="' + escapeHtml(r.path) + '" class="pdf-link">View</a></li>';
             });
             list.innerHTML = html;
-
-            // PDF links: use window.open to avoid replacing page on mobile
             list.querySelectorAll('.pdf-link').forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    window.open(this.getAttribute('href'), '_blank', 'noopener');
-                });
+                link.addEventListener('click', function(e) { e.preventDefault(); window.open(this.getAttribute('href'), '_blank', 'noopener'); });
             });
-
-            // Re-apply translations after dynamic render
             if (typeof window.applyTranslations === 'function') {
                 var lang = window.getCurrentLang ? window.getCurrentLang() : (localStorage.getItem('apex-lang') || 'en');
                 window.applyTranslations(lang);
