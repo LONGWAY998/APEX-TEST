@@ -2,6 +2,10 @@
 (function() {
     const translations = {
         en: {
+            // Brand
+            'brand.name': 'Jinnong Sui Capital',
+            'brand.full': 'Jinnong Sui Capital Management Ltd.',
+
             // Nav
             'nav.home': 'Home',
             'nav.products': 'Products',
@@ -12,7 +16,7 @@
 
             // Hero - index
             'hero.heading': 'Innovating <span class="highlight">Future</span> Finance',
-            'hero.subtitle': 'Apex Capital is a leading fund management company specializing in quantitative strategies, AI-driven investments, and sustainable growth opportunities.',
+            'hero.subtitle': 'Jinnong Sui Capital is a leading fund management company specializing in quantitative strategies, AI-driven investments, and sustainable growth opportunities.',
             'hero.cta': 'Explore Our Vision',
             'hero.cta2': 'View Full Prospectus <i class="fas fa-arrow-right"></i>',
             'hero.stat1.label': 'AUM (RMB)',
@@ -114,7 +118,7 @@
             // Compliance Pages
             'comp.ethics.title': 'Code of Ethics',
             'comp.ethics.date': '<strong>Effective Date:</strong> January 1, 2025',
-            'comp.ethics.intro': 'Apex Capital and its managed funds are committed to conducting business with the highest ethical standards. This Code of Ethics establishes behavioral benchmarks for all employees, management, and partners, ensuring every decision prioritizes investor interests.',
+            'comp.ethics.intro': 'Jinnong Sui Capital and its managed funds are committed to conducting business with the highest ethical standards. This Code of Ethics establishes behavioral benchmarks for all employees, management, and partners, ensuring every decision prioritizes investor interests.',
             'comp.ethics.h1': '1. Integrity & Honesty',
             'comp.ethics.c1': 'All personnel must adhere to the principle of good faith. Fraud, misrepresentation, or misleading statements in any form are strictly prohibited. All investment advice, product communications, and client interactions must be truthful, accurate, and complete.',
             'comp.ethics.h2': '2. Investor Interests First',
@@ -133,7 +137,7 @@
 
             'comp.privacy.title': 'Privacy Policy',
             'comp.privacy.date': '<strong>Effective Date:</strong> January 1, 2025',
-            'comp.privacy.intro': 'Apex Capital ("we," "us") values your privacy. This Privacy Policy describes how we collect, use, store, and protect your personal data.',
+            'comp.privacy.intro': 'Jinnong Sui Capital ("we," "us") values your privacy. This Privacy Policy describes how we collect, use, store, and protect your personal data.',
             'comp.privacy.h1': '1. Data Collection',
             'comp.privacy.c1': 'We may collect the following categories of personal data:<ul><li><strong>Identity Data:</strong> name, ID number, passport number, date of birth</li><li><strong>Contact Data:</strong> address, telephone number, email address</li><li><strong>Financial Data:</strong> bank account information, proof of income, asset position, investment experience</li><li><strong>Transaction Data:</strong> subscription and redemption records, holding information</li><li><strong>Due Diligence Data:</strong> information required for anti-money laundering (AML) and know-your-customer (KYC) procedures</li></ul>',
             'comp.privacy.h2': '2. Data Usage',
@@ -151,7 +155,7 @@
 
             'comp.conflict.title': 'Conflict of Interest Policy',
             'comp.conflict.date': '<strong>Effective Date:</strong> January 1, 2025',
-            'comp.conflict.intro': 'Apex Capital is committed to identifying, managing, and disclosing all actual and potential conflicts of interest to ensure investor interests are not compromised.',
+            'comp.conflict.intro': 'Jinnong Sui Capital is committed to identifying, managing, and disclosing all actual and potential conflicts of interest to ensure investor interests are not compromised.',
             'comp.conflict.h1': '1. Types of Conflicts',
             'comp.conflict.c1': 'The following are potential conflict-of-interest scenarios in our business:<ul><li><strong>Personal Trading:</strong> overlap between employee personal investments and fund holdings</li><li><strong>Related-Party Transactions:</strong> transactions involving affiliated entities (e.g., the manager or its subsidiaries)</li><li><strong>Soft Commissions:</strong> accepting research services or other benefits from counterparties</li><li><strong>Multiple Roles:</strong> the same individual serving multiple funds or clients simultaneously</li><li><strong>Gifts & Entertainment:</strong> accepting favors that may impair independent judgment</li><li><strong>External Appointments:</strong> employees holding positions at external organizations</li></ul>',
             'comp.conflict.h2': '2. Identification & Disclosure',
@@ -165,7 +169,7 @@
 
             'comp.aml.title': 'Anti-Money Laundering Statement',
             'comp.aml.date': '<strong>Effective Date:</strong> January 1, 2025',
-            'comp.aml.intro': 'Apex Capital strictly complies with applicable anti-money laundering (AML) and counter-terrorist financing (CFT) laws and regulations. We are committed to safeguarding the integrity of the financial system and preventing the inflow of illicit funds.',
+            'comp.aml.intro': 'Jinnong Sui Capital strictly complies with applicable anti-money laundering (AML) and counter-terrorist financing (CFT) laws and regulations. We are committed to safeguarding the integrity of the financial system and preventing the inflow of illicit funds.',
             'comp.aml.h1': '1. Regulatory Basis',
             'comp.aml.c1': 'This AML program is established in accordance with:<ul><li>The Anti-Money Laundering Law of the People\'s Republic of China</li><li>The Administrative Regulations on Anti-Money Laundering for Financial Institutions</li><li>The Measures for the Administration of Financial Institutions\' Reporting of Large-Value and Suspicious Transactions</li><li>Relevant Financial Action Task Force (FATF) Recommendations</li></ul>',
             'comp.aml.h2': '2. Customer Due Diligence (CDD)',
@@ -173,7 +177,7 @@
             'comp.aml.h3': '3. Transaction Monitoring',
             'comp.aml.c3': '<ul><li>Large-value reporting for single or aggregated cash transactions exceeding RMB 50,000</li><li>Suspicious transactions reported within 24 hours to the China Anti-Money Laundering Monitoring and Analysis Center</li><li>Enhanced scrutiny of transactions involving high-risk countries or regions</li><li>Monitoring of unusual patterns such as frequent subscriptions/redemptions and structured transactions</li></ul>',
             'comp.aml.h4': '4. Sanctions Screening',
-            'comp.aml.c4': 'Apex Capital screens all investors and counterparties against major sanctions lists, including those maintained by the United Nations, China, U.S. OFAC, and the European Union. Matches are rejected and reported to regulators as required.',
+            'comp.aml.c4': 'Jinnong Sui Capital screens all investors and counterparties against major sanctions lists, including those maintained by the United Nations, China, U.S. OFAC, and the European Union. Matches are rejected and reported to regulators as required.',
             'comp.aml.h5': '5. Record Keeping',
             'comp.aml.c5': 'All customer identity records, transaction records, and due diligence files are retained for a minimum of 5 years from the date of termination of the business relationship or the date of the transaction, to satisfy regulatory examination requirements.',
             'comp.aml.h6': '6. Employee Training',
@@ -185,17 +189,17 @@
 
             'comp.terms.title': 'Terms of Use',
             'comp.terms.date': '<strong>Effective Date:</strong> January 1, 2025',
-            'comp.terms.intro': 'By accessing this website and the services provided by Apex Capital Management Ltd. ("Apex Capital," "we," "us"), you agree to be bound by these Terms of Use. If you do not agree, please refrain from using this website.',
+            'comp.terms.intro': 'By accessing this website and the services provided by Jinnong Sui Capital Management Ltd. ("Jinnong Sui Capital," "we," "us"), you agree to be bound by these Terms of Use. If you do not agree, please refrain from using this website.',
             'comp.terms.h1': '1. No Investment Advice',
             'comp.terms.c1': 'The content on this website is provided for informational purposes only and does not constitute investment advice, a solicitation, or an offer to buy or sell any financial product. Past performance is not indicative of future results. You should consult a qualified financial advisor before making investment decisions.',
             'comp.terms.h2': '2. Accuracy of Information',
             'comp.terms.c2': 'While we strive to ensure the accuracy and timeliness of information on this website, we make no warranties or representations, express or implied, regarding the completeness, accuracy, or reliability of any content. Market data, fund performance figures, and regulatory filings may be subject to updates without notice.',
             'comp.terms.h3': '3. Intellectual Property',
-            'comp.terms.c3': 'All content on this website, including text, graphics, logos, icons, and software, is the property of Apex Capital or its content suppliers and is protected by applicable intellectual property laws. Unauthorized reproduction, distribution, or modification of any content is prohibited without prior written consent.',
+            'comp.terms.c3': 'All content on this website, including text, graphics, logos, icons, and software, is the property of Jinnong Sui Capital or its content suppliers and is protected by applicable intellectual property laws. Unauthorized reproduction, distribution, or modification of any content is prohibited without prior written consent.',
             'comp.terms.h4': '4. Limitation of Liability',
-            'comp.terms.c4': 'To the fullest extent permitted by law, Apex Capital shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your access to or use of this website, including but not limited to any errors or omissions in content, or any loss or damage resulting from reliance on information provided herein.',
+            'comp.terms.c4': 'To the fullest extent permitted by law, Jinnong Sui Capital shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your access to or use of this website, including but not limited to any errors or omissions in content, or any loss or damage resulting from reliance on information provided herein.',
             'comp.terms.h5': '5. Third-Party Links',
-            'comp.terms.c5': 'This website may contain links to third-party websites for your convenience. Apex Capital does not endorse or assume responsibility for the content, privacy policies, or practices of any third-party sites. Accessing such links is at your own risk.',
+            'comp.terms.c5': 'This website may contain links to third-party websites for your convenience. Jinnong Sui Capital does not endorse or assume responsibility for the content, privacy policies, or practices of any third-party sites. Accessing such links is at your own risk.',
             'comp.terms.h6': '6. Privacy',
             'comp.terms.c6': 'Your use of this website is also governed by our Privacy Policy, which outlines how we collect, use, and protect your personal data. Please review the Privacy Policy for more information.',
             'comp.terms.h7': '7. Governing Law',
@@ -211,7 +215,7 @@
             'ann.qgef.date': 'June 15, 2026',
             'ann.qgef.location': 'Xiamen, China',
             'ann.qgef.readtime': '5 min read',
-            'ann.qgef.p1': 'Apex Capital is proud to announce the launch of the <strong>Quantum Green Energy Fund</strong>, a thematic investment vehicle focused on the global energy transition. The fund targets high-growth opportunities across solar, wind, energy storage, and hydrogen value chains, combining quantitative screening with fundamental analysis.',
+            'ann.qgef.p1': 'Jinnong Sui Capital is proud to announce the launch of the <strong>Quantum Green Energy Fund</strong>, a thematic investment vehicle focused on the global energy transition. The fund targets high-growth opportunities across solar, wind, energy storage, and hydrogen value chains, combining quantitative screening with fundamental analysis.',
             'ann.qgef.card1.val': '$5,000',
             'ann.qgef.card1.label': 'Minimum Subscription',
             'ann.qgef.card2.val': '10%–13.5%',
@@ -235,8 +239,8 @@
             'ann.tih.date': 'May 8, 2026',
             'ann.tih.location': 'Shenzhen, China',
             'ann.tih.readtime': '4 min read',
-            'ann.tih.p1': 'Apex Capital has entered into a strategic partnership with the <strong>Tech Innovation Hub</strong>, a leading fintech accelerator based in Shenzhen. This collaboration aims to integrate cutting-edge artificial intelligence and machine learning capabilities into our investment research and risk management platforms.',
-            'ann.tih.partner1': 'Apex Capital',
+            'ann.tih.p1': 'Jinnong Sui Capital has entered into a strategic partnership with the <strong>Tech Innovation Hub</strong>, a leading fintech accelerator based in Shenzhen. This collaboration aims to integrate cutting-edge artificial intelligence and machine learning capabilities into our investment research and risk management platforms.',
+            'ann.tih.partner1': 'Jinnong Sui Capital',
             'ann.tih.partner2': 'Tech Innovation Hub',
             'ann.tih.h2': 'Partnership Scope',
             'ann.tih.hl.title': 'Key Initiatives',
@@ -244,7 +248,7 @@
             'ann.tih.hl.li2': 'Natural language processing for regulatory filing analysis',
             'ann.tih.hl.li3': 'Real-time market sentiment dashboard for trading desks',
             'ann.tih.hl.li4': 'Blockchain-based settlement prototype for interbank CD transactions',
-            'ann.tih.p2': 'The partnership grants Apex Capital access to a talent pool of over 200 AI researchers and engineers, along with state-of-the-art GPU computing infrastructure. In return, Apex Capital will provide real-world financial datasets and domain expertise to help validate and commercialize the Hub\'s research.',
+            'ann.tih.p2': 'The partnership grants Jinnong Sui Capital access to a talent pool of over 200 AI researchers and engineers, along with state-of-the-art GPU computing infrastructure. In return, Jinnong Sui Capital will provide real-world financial datasets and domain expertise to help validate and commercialize the Hub\'s research.',
             'ann.tih.h3': 'Expected Outcomes',
             'ann.tih.p3': 'Within the first 12 months, we expect to deploy an AI-assisted credit screening module that reduces manual review time by 60% while improving default prediction accuracy. The NLP system will monitor over 5,000 regulatory filings per day across Chinese and English sources for compliance and investment signals.',
 
@@ -253,7 +257,7 @@
             'ann.ic.date': 'September 12–14, 2026',
             'ann.ic.location': 'Xiamen Int\'l Conference Center',
             'ann.ic.readtime': '3 min read',
-            'ann.ic.p1': 'Apex Capital will participate as a <strong>Gold Sponsor</strong> at the 2026 China Asset Management Summit, the premier gathering of asset managers, institutional investors, and regulators in the region. With over 3,000 attendees expected, the three-day event will feature keynote addresses, panel discussions, and closed-door roundtables on the future of asset management.',
+            'ann.ic.p1': 'Jinnong Sui Capital will participate as a <strong>Gold Sponsor</strong> at the 2026 China Asset Management Summit, the premier gathering of asset managers, institutional investors, and regulators in the region. With over 3,000 attendees expected, the three-day event will feature keynote addresses, panel discussions, and closed-door roundtables on the future of asset management.',
             'ann.ic.h2': 'Our Sessions',
             'ann.ic.th1': 'Time',
             'ann.ic.th2': 'Session',
@@ -261,7 +265,7 @@
             'ann.ic.th4': 'Format',
             'ann.ic.s1.time': 'Sep 12, 10:00 AM',
             'ann.ic.s1.title': 'Fixed Income Innovation: Bills & Bonds in the New Rate Regime',
-            'ann.ic.s1.speaker': 'CIO, Apex Capital',
+            'ann.ic.s1.speaker': 'CIO, Jinnong Sui Capital',
             'ann.ic.s1.format': 'Keynote',
             'ann.ic.s2.time': 'Sep 13, 2:00 PM',
             'ann.ic.s2.title': 'AI-Driven Credit Analysis: From Theory to Production',
@@ -272,22 +276,22 @@
             'ann.ic.s3.speaker': 'Head of ESG Strategy',
             'ann.ic.s3.format': 'Workshop',
             'ann.ic.h3': 'Visit Our Booth',
-            'ann.ic.p2': 'Attendees are invited to visit Apex Capital at <strong>Booth A-12</strong> in the main exhibition hall. Our team will be available for one-on-one consultations, product demonstrations, and live portfolio analytics. Complimentary copies of our flagship research report, <em>"The Future of Bill & Bond Strategies in China,"</em> will be available.',
+            'ann.ic.p2': 'Attendees are invited to visit Jinnong Sui Capital at <strong>Booth A-12</strong> in the main exhibition hall. Our team will be available for one-on-one consultations, product demonstrations, and live portfolio analytics. Complimentary copies of our flagship research report, <em>"The Future of Bill & Bond Strategies in China,"</em> will be available.',
 
             'ann.ck.badge': 'Keynote',
             'ann.ck.title': 'Future of Digital Assets',
             'ann.ck.date': 'April 22, 2026',
             'ann.ck.location': 'Hong Kong Convention Centre',
             'ann.ck.readtime': '6 min read',
-            'ann.ck.p1': 'At the 2026 Digital Finance Forum in Hong Kong, Apex Capital\'s CEO delivered a widely anticipated keynote on the institutional adoption of digital assets and the transformative role of blockchain technology in traditional finance. The speech outlined a pragmatic roadmap for integrating digital assets into regulated fund structures.',
+            'ann.ck.p1': 'At the 2026 Digital Finance Forum in Hong Kong, Jinnong Sui Capital\'s CEO delivered a widely anticipated keynote on the institutional adoption of digital assets and the transformative role of blockchain technology in traditional finance. The speech outlined a pragmatic roadmap for integrating digital assets into regulated fund structures.',
             'ann.ck.quote': '"Digital assets are no longer a niche experiment — they are becoming a structural component of the global financial system. The question is not whether to engage, but how to do so with the same rigor and fiduciary discipline we apply to every other asset class."',
-            'ann.ck.quoteAuthor': '— Apex Capital CEO, 2026 Digital Finance Forum',
+            'ann.ck.quoteAuthor': '— Jinnong Sui Capital CEO, 2026 Digital Finance Forum',
             'ann.ck.h2': 'Market Outlook',
             'ann.ck.stat1': 'Global Digital Asset Market Cap (2026E)',
             'ann.ck.stat2': 'Institutions With Some Exposure by 2028',
             'ann.ck.stat3': 'Recommended Portfolio Allocation',
             'ann.ck.stat4': 'Regulated Digital Asset ETFs Launched (2025–26)',
-            'ann.ck.h3': 'Apex Capital\'s Approach',
+            'ann.ck.h3': 'Jinnong Sui Capital\'s Approach',
             'ann.ck.p2': 'The keynote outlined a three-phase approach: <strong>Phase 1 (2026)</strong> — research and education, building internal expertise; <strong>Phase 2 (2027)</strong> — pilot allocations in select managed accounts with strict exposure limits; <strong>Phase 3 (2028+)</strong> — dedicated digital asset fund products subject to regulatory approval. All initiatives will operate within existing compliance frameworks, including AML/KYC, custody segregation, and independent audit.',
             'ann.ck.video': 'Full Keynote Recording (48 min)',
             'ann.ck.p3': 'A full transcript and the accompanying slide deck are available for download. For institutional investors interested in early-access research on digital asset integration strategies, please contact our Investor Relations team.',
@@ -380,7 +384,7 @@
             'svc.wm.f4.title': 'Alternative Investments',
             'svc.wm.f4.desc': 'Access to private equity, venture capital, hedge funds, and real asset opportunities.',
             'svc.cta.title': 'Ready to Get Started?',
-            'svc.cta.desc': 'Schedule a consultation with our team to discuss how Apex Capital can help you achieve your financial objectives.',
+            'svc.cta.desc': 'Schedule a consultation with our team to discuss how Jinnong Sui Capital can help you achieve your financial objectives.',
             'svc.cta.btn': 'Contact Us',
 
             // Fund Product
@@ -444,6 +448,10 @@
             'fund.disclaimer.tagline': 'Rooted in Fujian, steady every step of the way.'
         },
         zh: {
+            // Brand
+            'brand.name': '金農穗基金管理有限公司',
+            'brand.full': '金農穗基金管理有限公司',
+
             // Nav
             'nav.home': '首頁',
             'nav.products': '核心產品',
@@ -454,7 +462,7 @@
 
             // Hero - index
             'hero.heading': '創新<span class="highlight">未來</span>金融',
-            'hero.subtitle': 'Apex Capital 是一家領先的基金管理公司，專注於量化策略、AI 驅動投資和可持續增長機會。',
+            'hero.subtitle': '金農穗基金管理有限公司是一家領先的基金管理公司，專注於量化策略、AI 驅動投資和可持續增長機會。',
             'hero.cta': '探索我們的願景',
             'hero.cta2': '查看完整說明書 <i class="fas fa-arrow-right"></i>',
             'hero.stat1.label': '管理規模 (RMB)',
@@ -556,7 +564,7 @@
             // Compliance Pages
             'comp.ethics.title': '道德準則',
             'comp.ethics.date': '<strong>生效日期：</strong>2025 年 1 月 1 日',
-            'comp.ethics.intro': 'Apex Capital 及其管理基金致力於以最高道德標準開展業務。本道德準則為全體員工、管理層及合作夥伴確立行為基準，確保每一項決策均以投資者利益為先。',
+            'comp.ethics.intro': '金農穗基金管理有限公司 及其管理基金致力於以最高道德標準開展業務。本道德準則為全體員工、管理層及合作夥伴確立行為基準，確保每一項決策均以投資者利益為先。',
             'comp.ethics.h1': '1. 誠信與正直',
             'comp.ethics.c1': '全體員工須恪守誠信原則，嚴禁任何形式的欺詐、誤導或不實陳述。所有投資建議、產品宣傳及客戶溝通均須真實、準確、完整。',
             'comp.ethics.h2': '2. 投資者利益優先',
@@ -575,7 +583,7 @@
 
             'comp.privacy.title': '隱私政策',
             'comp.privacy.date': '<strong>生效日期：</strong>2025 年 1 月 1 日',
-            'comp.privacy.intro': 'Apex Capital（「我們」）重視您的隱私權。本隱私政策說明我們如何收集、使用、儲存及保護您的個人資料。',
+            'comp.privacy.intro': '金農穗基金管理有限公司（「我們」）重視您的隱私權。本隱私政策說明我們如何收集、使用、儲存及保護您的個人資料。',
             'comp.privacy.h1': '1. 資料收集',
             'comp.privacy.c1': '我們可能收集以下類別的個人資料：<ul><li><strong>身份資料：</strong>姓名、身份證號碼、護照號碼、出生日期</li><li><strong>聯絡資料：</strong>地址、電話號碼、電子郵件</li><li><strong>財務資料：</strong>銀行賬戶信息、收入證明、資產狀況、投資經驗</li><li><strong>交易資料：</strong>申購、贖回記錄、持倉信息</li><li><strong>盡職調查資料：</strong>反洗錢（AML）及認識你的客戶（KYC）所需信息</li></ul>',
             'comp.privacy.h2': '2. 資料使用',
@@ -593,7 +601,7 @@
 
             'comp.conflict.title': '利益衝突政策',
             'comp.conflict.date': '<strong>生效日期：</strong>2025 年 1 月 1 日',
-            'comp.conflict.intro': 'Apex Capital 致力於識別、管理和披露所有實際及潛在的利益衝突，確保投資者權益不受損害。',
+            'comp.conflict.intro': '金農穗基金管理有限公司 致力於識別、管理和披露所有實際及潛在的利益衝突，確保投資者權益不受損害。',
             'comp.conflict.h1': '1. 利益衝突的類型',
             'comp.conflict.c1': '以下為本基金業務中可能出現的利益衝突情形：<ul><li><strong>個人交易：</strong>員工個人投資與基金投資標的重疊</li><li><strong>關聯交易：</strong>與關聯方（如管理人或其子公司）進行的交易</li><li><strong>軟性佣金：</strong>接受交易對手提供的研究服務或其他利益</li><li><strong>多重角色：</strong>同一人員同時服務於多個基金或客戶</li><li><strong>禮品與招待：</strong>接受可能影響獨立判斷的饋贈</li><li><strong>外部任職：</strong>員工在外部機構兼任職務</li></ul>',
             'comp.conflict.h2': '2. 識別與申報',
@@ -607,7 +615,7 @@
 
             'comp.aml.title': '反洗錢聲明',
             'comp.aml.date': '<strong>生效日期：</strong>2025 年 1 月 1 日',
-            'comp.aml.intro': 'Apex Capital 嚴格遵守適用的反洗錢（AML）及反恐怖融資（CFT）法律法規，致力於維護金融體系安全，防範非法資金流入。',
+            'comp.aml.intro': '金農穗基金管理有限公司 嚴格遵守適用的反洗錢（AML）及反恐怖融資（CFT）法律法規，致力於維護金融體系安全，防範非法資金流入。',
             'comp.aml.h1': '1. 監管依據',
             'comp.aml.c1': '本反洗錢計劃依據以下法規建立：<ul><li>《中華人民共和國反洗錢法》</li><li>《金融機構反洗錢規定》</li><li>《金融機構大額交易和可疑交易報告管理辦法》</li><li>金融行動特別工作組（FATF）相關建議</li></ul>',
             'comp.aml.h2': '2. 客戶盡職調查（CDD）',
@@ -615,7 +623,7 @@
             'comp.aml.h3': '3. 交易監控',
             'comp.aml.c3': '<ul><li>對單筆或累計超過人民幣 50,000 元的現金交易進行大額報告</li><li>對可疑交易實行 24 小時內向中國反洗錢監測分析中心報告機制</li><li>對來自高風險國家或地區的交易實施強化審查</li><li>監控頻繁申贖、結構化交易等異常模式</li></ul>',
             'comp.aml.h4': '4. 制裁篩查',
-            'comp.aml.c4': 'Apex Capital 對所有投資者及交易對手實施制裁名單篩查，涵蓋聯合國、中國、美國 OFAC、歐盟等主要制裁名單。匹配命中者將被拒絕交易並按監管要求上報。',
+            'comp.aml.c4': '金農穗基金管理有限公司 對所有投資者及交易對手實施制裁名單篩查，涵蓋聯合國、中國、美國 OFAC、歐盟等主要制裁名單。匹配命中者將被拒絕交易並按監管要求上報。',
             'comp.aml.h5': '5. 記錄保存',
             'comp.aml.c5': '所有客戶身份資料、交易記錄及盡職調查文件保存期限不少於 5 年（自業務關係終止或交易發生之日起計），以滿足監管審查要求。',
             'comp.aml.h6': '6. 員工培訓',
@@ -627,17 +635,17 @@
 
             'comp.terms.title': '使用條款',
             'comp.terms.date': '<strong>生效日期：</strong>2025 年 1 月 1 日',
-            'comp.terms.intro': '訪問本網站及使用 Apex Capital Management Ltd.（「Apex Capital」或「我們」）提供的服務，即表示您同意受本使用條款的約束。如不同意，請勿使用本網站。',
+            'comp.terms.intro': '訪問本網站及使用 金農穗基金管理有限公司 Management Ltd.（「金農穗基金管理有限公司」或「我們」）提供的服務，即表示您同意受本使用條款的約束。如不同意，請勿使用本網站。',
             'comp.terms.h1': '1. 不構成投資建議',
             'comp.terms.c1': '本網站內容僅供參考，不構成投資建議、招攬或要約買賣任何金融產品。過往表現不代表未來結果。在做出投資決策前，您應諮詢合資格的財務顧問。',
             'comp.terms.h2': '2. 資訊準確性',
             'comp.terms.c2': '儘管我們致力於確保本網站資訊的準確性和時效性，我們不對任何內容的完整性、準確性或可靠性作任何明示或暗示的保證或陳述。市場數據、基金表現數據及監管申報文件可能會在不另行通知的情況下更新。',
             'comp.terms.h3': '3. 知識產權',
-            'comp.terms.c3': '本網站所有內容，包括文字、圖形、標誌、圖標及軟件，均為 Apex Capital 或其內容供應商的財產，受適用的知識產權法律保護。未經事先書面同意，禁止對任何內容進行未經授權的複製、分發或修改。',
+            'comp.terms.c3': '本網站所有內容，包括文字、圖形、標誌、圖標及軟件，均為 金農穗基金管理有限公司 或其內容供應商的財產，受適用的知識產權法律保護。未經事先書面同意，禁止對任何內容進行未經授權的複製、分發或修改。',
             'comp.terms.h4': '4. 責任限制',
-            'comp.terms.c4': '在法律允許的最大範圍內，Apex Capital 不對因您訪問或使用本網站而產生的任何直接、間接、附帶、後果性或懲罰性損害承擔責任，包括但不限於內容中的任何錯誤或遺漏，或因依賴本網站所提供資訊而導致的任何損失或損害。',
+            'comp.terms.c4': '在法律允許的最大範圍內，金農穗基金管理有限公司 不對因您訪問或使用本網站而產生的任何直接、間接、附帶、後果性或懲罰性損害承擔責任，包括但不限於內容中的任何錯誤或遺漏，或因依賴本網站所提供資訊而導致的任何損失或損害。',
             'comp.terms.h5': '5. 第三方鏈接',
-            'comp.terms.c5': '本網站可能包含第三方網站的鏈接以供您方便使用。Apex Capital 不對任何第三方網站的內容、隱私政策或做法作出認可或承擔責任。訪問此類鏈接的風險由您自行承擔。',
+            'comp.terms.c5': '本網站可能包含第三方網站的鏈接以供您方便使用。金農穗基金管理有限公司 不對任何第三方網站的內容、隱私政策或做法作出認可或承擔責任。訪問此類鏈接的風險由您自行承擔。',
             'comp.terms.h6': '6. 隱私',
             'comp.terms.c6': '您使用本網站亦受我們的隱私政策管轄，該政策說明了我們如何收集、使用和保護您的個人資料。請查閱隱私政策以獲取更多資訊。',
             'comp.terms.h7': '7. 管轄法律',
@@ -653,7 +661,7 @@
             'ann.qgef.date': '2026 年 6 月 15 日',
             'ann.qgef.location': '中國廈門',
             'ann.qgef.readtime': '閱讀時間：5 分鐘',
-            'ann.qgef.p1': 'Apex Capital 榮幸宣布推出<strong>量子綠色能源基金</strong>，這是一檔專注於全球能源轉型的主題投資工具。該基金結合量化篩選與基本面分析，在太陽能、風能、儲能及氫能價值鏈中捕捉高增長機會。',
+            'ann.qgef.p1': '金農穗基金管理有限公司 榮幸宣布推出<strong>量子綠色能源基金</strong>，這是一檔專注於全球能源轉型的主題投資工具。該基金結合量化篩選與基本面分析，在太陽能、風能、儲能及氫能價值鏈中捕捉高增長機會。',
             'ann.qgef.card1.val': '$5,000',
             'ann.qgef.card1.label': '最低認購金額',
             'ann.qgef.card2.val': '10%–13.5%',
@@ -677,8 +685,8 @@
             'ann.tih.date': '2026 年 5 月 8 日',
             'ann.tih.location': '中國深圳',
             'ann.tih.readtime': '閱讀時間：4 分鐘',
-            'ann.tih.p1': 'Apex Capital 與深圳領先的金融科技加速器<strong>科技創新中心</strong>達成戰略合作夥伴關係。此次合作旨在將尖端人工智能和機器學習技術整合到我們的投資研究和風險管理平台。',
-            'ann.tih.partner1': 'Apex Capital',
+            'ann.tih.p1': '金農穗基金管理有限公司 與深圳領先的金融科技加速器<strong>科技創新中心</strong>達成戰略合作夥伴關係。此次合作旨在將尖端人工智能和機器學習技術整合到我們的投資研究和風險管理平台。',
+            'ann.tih.partner1': '金農穗基金管理有限公司',
             'ann.tih.partner2': '科技創新中心',
             'ann.tih.h2': '合作範圍',
             'ann.tih.hl.title': '主要計劃',
@@ -686,7 +694,7 @@
             'ann.tih.hl.li2': '用於監管申報文件分析的自然語言處理',
             'ann.tih.hl.li3': '為交易台提供的即時市場情緒儀表板',
             'ann.tih.hl.li4': '基於區塊鏈的同業存單交易結算原型',
-            'ann.tih.p2': '此次合作為 Apex Capital 提供超過 200 名 AI 研究人員及工程師的人才庫，以及最先進的 GPU 計算基礎設施。作為回報，Apex Capital 將提供真實金融數據集和領域專業知識，幫助驗證及商業化該中心的研發成果。',
+            'ann.tih.p2': '此次合作為 金農穗基金管理有限公司 提供超過 200 名 AI 研究人員及工程師的人才庫，以及最先進的 GPU 計算基礎設施。作為回報，金農穗基金管理有限公司 將提供真實金融數據集和領域專業知識，幫助驗證及商業化該中心的研發成果。',
             'ann.tih.h3': '預期成果',
             'ann.tih.p3': '在首 12 個月內，我們預計部署一個 AI 輔助信用篩選模組，將人工審查時間減少 60%，同時提升違約預測準確性。NLP 系統將每日監控超過 5,000 份中英文監管申報文件，提取合規及投資信號。',
 
@@ -695,7 +703,7 @@
             'ann.ic.date': '2026 年 9 月 12–14 日',
             'ann.ic.location': '廈門國際會議中心',
             'ann.ic.readtime': '閱讀時間：3 分鐘',
-            'ann.ic.p1': 'Apex Capital 將以<strong>金牌贊助商</strong>身份參加 2026 中國資產管理峰會，這是區域內資產管理機構、機構投資者及監管機構的頂級盛會。預計超過 3,000 名與會者將參與為期三天的主題演講、專題討論及閉門圓桌會議，探討資產管理的未來。',
+            'ann.ic.p1': '金農穗基金管理有限公司 將以<strong>金牌贊助商</strong>身份參加 2026 中國資產管理峰會，這是區域內資產管理機構、機構投資者及監管機構的頂級盛會。預計超過 3,000 名與會者將參與為期三天的主題演講、專題討論及閉門圓桌會議，探討資產管理的未來。',
             'ann.ic.h2': '我們的議程',
             'ann.ic.th1': '時間',
             'ann.ic.th2': '議程',
@@ -703,7 +711,7 @@
             'ann.ic.th4': '形式',
             'ann.ic.s1.time': '9 月 12 日 上午 10:00',
             'ann.ic.s1.title': '固定收益創新：新利率環境下的票據與債券策略',
-            'ann.ic.s1.speaker': 'Apex Capital 投資總監',
+            'ann.ic.s1.speaker': '金農穗基金管理有限公司 投資總監',
             'ann.ic.s1.format': '主題演講',
             'ann.ic.s2.time': '9 月 13 日 下午 2:00',
             'ann.ic.s2.title': 'AI 驅動信用分析：從理論到實踐',
@@ -721,15 +729,15 @@
             'ann.ck.date': '2026 年 4 月 22 日',
             'ann.ck.location': '香港會議展覽中心',
             'ann.ck.readtime': '閱讀時間：6 分鐘',
-            'ann.ck.p1': '在 2026 年香港數位金融論壇上，Apex Capital 執行長發表了備受期待的關於數位資產機構化採用及區塊鏈技術對傳統金融變革性影響的主題演講。演講概述了將數位資產整合到受監管基金結構中的務實路線圖。',
+            'ann.ck.p1': '在 2026 年香港數位金融論壇上，金農穗基金管理有限公司 執行長發表了備受期待的關於數位資產機構化採用及區塊鏈技術對傳統金融變革性影響的主題演講。演講概述了將數位資產整合到受監管基金結構中的務實路線圖。',
             'ann.ck.quote': '"數位資產已不再是小眾實驗——它們正成為全球金融體系的結構性組成部分。問題不在於是否參與，而在於如何以我們對其他所有資產類別所秉持的同樣嚴謹和受託責任來參與。"',
-            'ann.ck.quoteAuthor': '— Apex Capital 執行長，2026 數位金融論壇',
+            'ann.ck.quoteAuthor': '— 金農穗基金管理有限公司 執行長，2026 數位金融論壇',
             'ann.ck.h2': '市場展望',
             'ann.ck.stat1': '全球數位資產市值（2026 預估）',
             'ann.ck.stat2': '到 2028 年有配置敞口的機構佔比',
             'ann.ck.stat3': '建議組合配置比例',
             'ann.ck.stat4': '已發行受監管數位資產 ETF（2025–26）',
-            'ann.ck.h3': 'Apex Capital 的策略',
+            'ann.ck.h3': '金農穗基金管理有限公司 的策略',
             'ann.ck.p2': '演講概述了三個階段的策略：<strong>第一階段（2026）</strong>——研究與教育，建立內部專業能力；<strong>第二階段（2027）</strong>——在特定管理帳戶中進行試點配置，設有嚴格的敞口限制；<strong>第三階段（2028+）</strong>——在監管批准的前提下推出專項數位資產基金產品。所有舉措將在現有合規框架內運作，包括 AML/KYC、資產託管隔離及獨立審計。',
             'ann.ck.video': '完整主題演講錄影（48 分鐘）',
             'ann.ck.p3': '完整演講稿及簡報文件可供下載。對於有意獲取數位資產整合策略早期研究的機構投資者，請聯繫我們的投資者關係團隊。',
@@ -822,7 +830,7 @@
             'svc.wm.f4.title': '另類投資',
             'svc.wm.f4.desc': '獲取私募股權、創投、對沖基金和實物資產機會。',
             'svc.cta.title': '準備好開始了嗎？',
-            'svc.cta.desc': '與我們的團隊預約諮詢，討論 Apex Capital 如何幫助您實現財務目標。',
+            'svc.cta.desc': '與我們的團隊預約諮詢，討論 金農穗基金管理有限公司 如何幫助您實現財務目標。',
             'svc.cta.btn': '聯絡我們',
 
             // Fund Product
@@ -913,56 +921,56 @@
         if (lang === 'zh') {
             const path = window.location.pathname;
             if (path.includes('quantum-green-energy')) {
-                document.title = '量子綠色能源基金 — Apex Capital';
+                document.title = '量子綠色能源基金 — 金農穗基金管理有限公司';
             } else if (path.includes('tech-innovation-hub')) {
-                document.title = '科技創新中心聯盟 — Apex Capital';
+                document.title = '科技創新中心聯盟 — 金農穗基金管理有限公司';
             } else if (path.includes('industry-conference')) {
-                document.title = '2026 中國資產管理峰會 — Apex Capital';
+                document.title = '2026 中國資產管理峰會 — 金農穗基金管理有限公司';
             } else if (path.includes('ceo-keynote')) {
-                document.title = '數位資產的未來 — Apex Capital';
+                document.title = '數位資產的未來 — 金農穗基金管理有限公司';
             } else if (path.includes('code-of-ethics')) {
-                document.title = '道德準則 — Apex Capital';
+                document.title = '道德準則 — 金農穗基金管理有限公司';
             } else if (path.includes('privacy-policy')) {
-                document.title = '隱私政策 — Apex Capital';
+                document.title = '隱私政策 — 金農穗基金管理有限公司';
             } else if (path.includes('conflict-of-interest')) {
-                document.title = '利益衝突政策 — Apex Capital';
+                document.title = '利益衝突政策 — 金農穗基金管理有限公司';
             } else if (path.includes('terms')) {
-                document.title = '使用條款 — Apex Capital';
+                document.title = '使用條款 — 金農穗基金管理有限公司';
             } else if (path.includes('aml-statement')) {
-                document.title = '反洗錢聲明 — Apex Capital';
+                document.title = '反洗錢聲明 — 金農穗基金管理有限公司';
             } else if (path.includes('regulatory-filings')) {
-                document.title = '監管申報與報告 - Apex Capital';
+                document.title = '監管申報與報告 - 金農穗基金管理有限公司';
             } else if (path.includes('services')) {
-                document.title = '我們的服務 - Apex Capital';
+                document.title = '我們的服務 - 金農穗基金管理有限公司';
             } else {
-                document.title = 'Apex Capital - 創新基金管理';
+                document.title = '金農穗基金管理有限公司 - 創新基金管理';
             }
         } else {
             const path = window.location.pathname;
             if (path.includes('quantum-green-energy')) {
-                document.title = 'New Fund Launch: Quantum Green Energy Fund — Apex Capital';
+                document.title = 'New Fund Launch: Quantum Green Energy Fund — Jinnong Sui Capital';
             } else if (path.includes('tech-innovation-hub')) {
-                document.title = 'Partnership: Tech Innovation Hub — Apex Capital';
+                document.title = 'Partnership: Tech Innovation Hub — Jinnong Sui Capital';
             } else if (path.includes('industry-conference')) {
-                document.title = '2026 China Asset Management Summit — Apex Capital';
+                document.title = '2026 China Asset Management Summit — Jinnong Sui Capital';
             } else if (path.includes('ceo-keynote')) {
-                document.title = 'CEO Keynote: Future of Digital Assets — Apex Capital';
+                document.title = 'CEO Keynote: Future of Digital Assets — Jinnong Sui Capital';
             } else if (path.includes('code-of-ethics')) {
-                document.title = 'Code of Ethics — Apex Capital';
+                document.title = 'Code of Ethics — Jinnong Sui Capital';
             } else if (path.includes('privacy-policy')) {
-                document.title = 'Privacy Policy — Apex Capital';
+                document.title = 'Privacy Policy — Jinnong Sui Capital';
             } else if (path.includes('conflict-of-interest')) {
-                document.title = 'Conflict of Interest Policy — Apex Capital';
+                document.title = 'Conflict of Interest Policy — Jinnong Sui Capital';
             } else if (path.includes('terms')) {
-                document.title = 'Terms of Use — Apex Capital';
+                document.title = 'Terms of Use — Jinnong Sui Capital';
             } else if (path.includes('aml-statement')) {
-                document.title = 'Anti-Money Laundering Statement — Apex Capital';
+                document.title = 'Anti-Money Laundering Statement — Jinnong Sui Capital';
             } else if (path.includes('regulatory-filings')) {
-                document.title = 'Regulatory Filings & Reports - Apex Capital';
+                document.title = 'Regulatory Filings & Reports - Jinnong Sui Capital';
             } else if (path.includes('services')) {
-                document.title = 'Our Services - Apex Capital';
+                document.title = 'Our Services - Jinnong Sui Capital';
             } else {
-                document.title = 'Apex Capital - Innovative Fund Management';
+                document.title = 'Jinnong Sui Capital - Innovative Fund Management';
             }
         }
 
