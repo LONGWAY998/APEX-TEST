@@ -7,14 +7,14 @@
   </defs>
 
   <!-- Shield / Hexagon shape -->
-  <polygon points="100,12 176,50 176,110 100,188 24,110 24,50"
-           fill="none" stroke="url(#gold)" stroke-width="6" stroke-linejoin="round"/>
+  <polygon points="100,20 168,56 168,110 100,180 32,110 32,56"
+           fill="none" stroke="url(#gold)" stroke-width="7" stroke-linejoin="round"/>
 
   <!-- Inner geometric mark - stylized mountain/arrow representing growth & stability -->
-  <polyline points="56,130 100,60 144,130"
+  <polyline points="60,132 100,64 140,132"
             fill="none" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
 
   <!-- Horizontal stability bar -->
-  <line x1="76" y1="170" x2="124" y2="170"
+  <line x1="78" y1="168" x2="122" y2="168"
         stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
 </svg>
