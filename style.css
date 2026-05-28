@@ -87,13 +87,6 @@ p {
     font-size: 2rem;
 }
 
-.logo-icon {
-    height: 22px;
-    width: 22px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
 .nav-links {
     display: flex;
     list-style: none;
