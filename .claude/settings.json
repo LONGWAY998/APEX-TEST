@@ -14,7 +14,13 @@
       "Bash(git pull *)",
       "Bash(git stash *)",
       "Bash(grep -oP \"'[^']+':\" \"c:\\\\Users\\\\26956\\\\BWver1\\\\lang.js\" | head -500 | sort > /tmp/en_keys.txt 2>/dev/null; wc -l /tmp/en_keys.txt 2>/dev/null || echo \"grep -P not supported on Windows\")",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(nslookup jns-capital.com)",
+      "WebFetch(domain:jns-capital.com)",
+      "Bash(curl -sI http://jns-capital.com)",
+      "Bash(curl -s http://jns-capital.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://jns-capital.com/style.css)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://jns-capital.com/lang.js)"
     ],
     "additionalDirectories": [
       "c:\\Users\\26956\\Desktop"

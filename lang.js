@@ -151,7 +151,7 @@
             'comp.privacy.h6': '6. Your Rights',
             'comp.privacy.c6': '<ul><li>Access and correct your personal data</li><li>Restrict or object to data processing</li><li>Withdraw consent (without affecting the lawfulness of prior processing)</li><li>Lodge a complaint with the relevant supervisory authority</li></ul>',
             'comp.privacy.h7': '7. Contact Us',
-            'comp.privacy.c7': 'For privacy-related inquiries, please contact the Compliance Department:<br>Email: longvv810@gmail.com',
+            'comp.privacy.c7': 'For privacy-related inquiries, please contact the Compliance Department:<br>Email: JinNongSuiCapital@gmail.com',
 
             'comp.conflict.title': 'Conflict of Interest Policy',
             'comp.conflict.date': '<strong>Effective Date:</strong> January 1, 2025',
@@ -185,7 +185,7 @@
             'comp.aml.h7': '7. Independent Audit',
             'comp.aml.c7': 'The AML program is subject to an independent external audit annually. Audit findings are reported to the Board of Directors and regulatory authorities.',
             'comp.aml.h8': '8. Contact',
-            'comp.aml.c8': 'For inquiries or to report suspicious activity, please contact the AML Compliance Officer:<br>Email: longvv810@gmail.com',
+            'comp.aml.c8': 'For inquiries or to report suspicious activity, please contact the AML Compliance Officer:<br>Email: JinNongSuiCapital@gmail.com',
 
             'comp.terms.title': 'Terms of Use',
             'comp.terms.date': '<strong>Effective Date:</strong> January 1, 2025',
@@ -207,7 +207,7 @@
             'comp.terms.h8': '8. Modifications',
             'comp.terms.c8': 'We reserve the right to modify these Terms of Use at any time. Changes will be effective immediately upon posting to this website. Your continued use of the website constitutes acceptance of the revised terms.',
             'comp.terms.h9': '9. Contact',
-            'comp.terms.c9': 'For questions regarding these Terms of Use, please contact us at:<br>Email: longvv810@gmail.com',
+            'comp.terms.c9': 'For questions regarding these Terms of Use, please contact us at:<br>Email: JinNongSuiCapital@gmail.com',
 
             // Announcements
             'ann.qgef.badge': 'New Fund Launch',
@@ -597,7 +597,7 @@
             'comp.privacy.h6': '6. 您的權利',
             'comp.privacy.c6': '<ul><li>查閱及更正您的個人資料</li><li>限制或反對資料處理</li><li>撤回同意（不影響撤回前已進行的合法處理）</li><li>向監管機構投訴</li></ul>',
             'comp.privacy.h7': '7. 聯繫我們',
-            'comp.privacy.c7': '如有隱私相關查詢，請聯繫合規部：<br>電郵：longvv810@gmail.com',
+            'comp.privacy.c7': '如有隱私相關查詢，請聯繫合規部：<br>電郵：JinNongSuiCapital@gmail.com',
 
             'comp.conflict.title': '利益衝突政策',
             'comp.conflict.date': '<strong>生效日期：</strong>2025 年 1 月 1 日',
@@ -631,7 +631,7 @@
             'comp.aml.h7': '7. 獨立審計',
             'comp.aml.c7': '反洗錢計劃每年接受一次獨立外部審計，審計結果向董事會及監管機構報告。',
             'comp.aml.h8': '8. 聯繫我們',
-            'comp.aml.c8': '如有疑問或需舉報可疑活動，請聯繫反洗錢合規官：<br>電郵：longvv810@gmail.com',
+            'comp.aml.c8': '如有疑問或需舉報可疑活動，請聯繫反洗錢合規官：<br>電郵：JinNongSuiCapital@gmail.com',
 
             'comp.terms.title': '使用條款',
             'comp.terms.date': '<strong>生效日期：</strong>2025 年 1 月 1 日',
@@ -653,7 +653,7 @@
             'comp.terms.h8': '8. 條款修改',
             'comp.terms.c8': '我們保留隨時修改本使用條款的權利。修改將於本網站發布後立即生效。您繼續使用本網站即表示接受經修訂的條款。',
             'comp.terms.h9': '9. 聯繫我們',
-            'comp.terms.c9': '如對本使用條款有任何疑問，請聯繫我們：<br>電郵：longvv810@gmail.com',
+            'comp.terms.c9': '如對本使用條款有任何疑問，請聯繫我們：<br>電郵：JinNongSuiCapital@gmail.com',
 
             // Announcements
             'ann.qgef.badge': '新基金發行',
