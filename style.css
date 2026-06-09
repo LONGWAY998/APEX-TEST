@@ -908,6 +908,13 @@ p {
     max-width: 700px;
 }
 
+.fb-page {
+    margin-top: 16px;
+    background: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 /* More Button */
 .btn-more {
     display: inline-flex;
