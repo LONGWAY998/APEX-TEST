@@ -5,6 +5,7 @@
             // Brand
             'brand.name': 'Jinnong Sui Capital',
             'brand.full': 'Jinnong Sui Capital Management Ltd.',
+            'brand.code': 'MIN:FJMIN818815839K',
 
             // Nav
             'nav.home': 'Home',
@@ -452,6 +453,7 @@
             // Brand
             'brand.name': '金農穗基金管理有限公司',
             'brand.full': '金農穗基金管理有限公司',
+            'brand.code': '閩:FJMIN818815839K',
 
             // Nav
             'nav.home': '首頁',
@@ -636,7 +638,7 @@
 
             'comp.terms.title': '使用條款',
             'comp.terms.date': '<strong>生效日期：</strong>2025 年 1 月 1 日',
-            'comp.terms.intro': '訪問本網站及使用 金農穗基金管理有限公司 Management Ltd.（「金農穗基金管理有限公司」或「我們」）提供的服務，即表示您同意受本使用條款的約束。如不同意，請勿使用本網站。',
+            'comp.terms.intro': '訪問本網站及使用金農穗基金管理有限公司（「金農穗基金管理有限公司」或「我們」）提供的服務，即表示您同意受本使用條款的約束。如不同意，請勿使用本網站。',
             'comp.terms.h1': '1. 不構成投資建議',
             'comp.terms.c1': '本網站內容僅供參考，不構成投資建議、招攬或要約買賣任何金融產品。過往表現不代表未來結果。在做出投資決策前，您應諮詢合資格的財務顧問。',
             'comp.terms.h2': '2. 資訊準確性',
