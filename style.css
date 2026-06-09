@@ -908,8 +908,19 @@ p {
     max-width: 700px;
 }
 
-.fb-page {
+.fb-toggle {
     margin-top: 16px;
+    cursor: pointer;
+    color: #60a5fa;
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 8px 0;
+    user-select: none;
+}
+.fb-toggle:hover { color: #93c5fd; }
+.fb-wrap { display: none; }
+.fb-wrap.open { display: block; }
+.fb-wrap .fb-page {
     background: #1e293b;
     border-radius: 8px;
     overflow: hidden;
