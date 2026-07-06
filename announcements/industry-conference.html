@@ -10,33 +10,9 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <script src="../lang.js" defer></script>
-    <style>
-        .announcement-page { padding: 120px 0 80px; min-height: 60vh; background: #0f172a; }
-        .announcement-hero { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%); border-radius: 16px; padding: 56px 48px; margin-bottom: 48px; color: #fff; position: relative; overflow: hidden; }
-        .announcement-hero::before { content: ''; position: absolute; top: -60px; right: -60px; width: 240px; height: 240px; border-radius: 50%; background: rgba(255,255,255,0.04); }
-        .announcement-hero::after { content: ''; position: absolute; bottom: -30px; left: 40%; width: 160px; height: 160px; border-radius: 50%; background: rgba(255,255,255,0.02); }
-        .announcement-hero > * { position: relative; z-index: 1; }
-        .announcement-hero .badge { display: inline-block; background: rgba(255,255,255,0.12); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 20px; color: #bfdbfe; }
-        .announcement-hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; color: #eff6ff; }
-        .announcement-hero .meta { font-size: 0.95rem; display: flex; gap: 24px; flex-wrap: wrap; color: #93c5fd; }
-        .announcement-hero .meta span { display: flex; align-items: center; gap: 6px; }
-        .announcement-content { max-width: 860px; margin: 0 auto; }
-        .announcement-content .feature-image { background: linear-gradient(135deg, #1e3a5f 0%, #1d4ed8 50%, #2563eb 100%); border-radius: 12px; height: 240px; display: flex; align-items: center; justify-content: center; margin-bottom: 40px; }
-        .announcement-content .feature-image i { font-size: 4.5rem; color: #93c5fd; }
-        .announcement-content h2 { font-size: 1.5rem; font-weight: 700; color: #e2e8f0; margin: 36px 0 16px; }
-        .announcement-content p { font-size: 1.05rem; line-height: 1.9; color: #94a3b8; margin-bottom: 16px; }
-        .announcement-content strong { color: #cbd5e1; }
-        .schedule-table { width: 100%; margin: 32px 0; border-collapse: collapse; }
-        .schedule-table th { background: #1e293b; color: #93c5fd; padding: 14px 18px; text-align: left; font-weight: 700; font-size: 0.9rem; border-bottom: 2px solid #334155; }
-        .schedule-table td { padding: 14px 18px; border-bottom: 1px solid #1e293b; color: #cbd5e1; font-size: 0.95rem; }
-        .schedule-table tr:hover td { background: #1a2332; }
-        .schedule-table .session-tag { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
-        .schedule-table .tag-keynote { background: #1e3a5f; color: #60a5fa; }
-        .schedule-table .tag-panel { background: #14532d; color: #4ade80; }
-        .schedule-table .tag-workshop { background: #451a03; color: #fbbf24; }
-    </style>
+    <script src="../site.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -45,8 +21,8 @@
             <ul class="nav-links">
                 <li><a href="../index.html#home" data-i18n="nav.home">Home</a></li>
                 <li><a href="../index.html#products" data-i18n="nav.products">Products</a></li>
-                <li><a href="../index.html#about" data-i18n="nav.about">About Us</a></li>
-                <li><a href="../index.html#disclosure" data-i18n="nav.disclosure">Disclosure</a></li>
+                <li><a href="../services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="../regulatory-filings.html" class="active" data-i18n="nav.disclosure">Disclosures</a></li>
                 <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="nav-actions">

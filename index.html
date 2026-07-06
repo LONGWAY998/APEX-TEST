@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <script src="reports-data.js" defer></script>
     <script src="lang.js" defer></script>
+    <script src="site.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -23,11 +24,11 @@
                 <span data-i18n="brand.name">Jinnong Sui Capital</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#home" data-i18n="nav.home">Home</a></li>
-                <li><a href="#products" data-i18n="nav.products">Products</a></li>
-                <li><a href="#about" data-i18n="nav.about">About Us</a></li>
-                <li><a href="#disclosure" data-i18n="nav.disclosure">Disclosure</a></li>
-                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                <li><a href="index.html#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="index.html#products" data-i18n="nav.products">Products</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="regulatory-filings.html" data-i18n="nav.disclosure">Disclosures</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <button class="lang-toggle">繁中</button>
@@ -46,11 +47,11 @@
                 <div class="hero-badge">
                     <i class="fas fa-certificate"></i> <span data-i18n="brand.code">MIN:FJMIN818815839K</span>
                 </div>
-                <h1 data-i18n="hero.heading">Innovating <span class="highlight">Future</span> Finance</h1>
-                <p class="subtitle" data-i18n="hero.subtitle">Jinnong Sui Capital is a leading fund management company specializing in quantitative strategies, AI-driven investments, and sustainable growth opportunities.</p>
+                <h1 data-i18n="hero.heading">Disciplined Capital, <span class="highlight">Transparent</span> Management</h1>
+                <p class="subtitle" data-i18n="hero.subtitle">Jinnong Sui Capital provides disciplined fund management solutions across fixed-income, quantitative, and risk-managed strategies.</p>
                 <div class="hero-actions">
-                    <a href="#products" class="btn-primary" data-i18n="hero.cta">Explore Our Vision</a>
-                    <a href="fund-product.html" class="btn-outline" data-i18n="hero.cta2">View Full Prospectus <i class="fas fa-arrow-right"></i></a>
+                    <a href="#products" class="btn-primary" data-i18n="hero.cta">View Products</a>
+                    <a href="regulatory-filings.html" class="btn-outline" data-i18n="hero.cta2">Review Disclosures <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="hero-stats">
                     <div class="hero-stat">
@@ -58,8 +59,8 @@
                         <span class="stat-label" data-i18n="hero.stat1.label">AUM (RMB)</span>
                     </div>
                     <div class="hero-stat">
-                        <span class="stat-value">DD<span class="stat-unit"></span></span>
-                        <span class="stat-label" data-i18n="hero.stat2.label">Return Potential</span>
+                        <span class="stat-value">C2<span class="stat-unit"></span></span>
+                        <span class="stat-label" data-i18n="hero.stat2.label">Risk Profile</span>
                     </div>
                     <div class="hero-stat">
                         <span class="stat-value">2001</span>
@@ -124,7 +125,7 @@
                             <span data-i18n="fund.tag3">Open-Ended</span>
                             <span data-i18n="fund.tag4">Daily Trading</span>
                         </div>
-                        <p class="fp-desc" data-i18n="products.featured.desc">≥90% allocation to high-grade credit, interest rate bonds & interbank CDs. Leveraging Fujian regional advantages to select AAA+ notes from state-owned banks and institutional platforms. Aiming for competitive double-digit annualized returns.*</p>
+                        <p class="fp-desc" data-i18n="products.featured.desc">≥90% allocation to high-grade credit, interest rate bonds & interbank CDs. The strategy focuses on liquidity management, credit selection, and prudent risk controls. Returns are not guaranteed and may fluctuate with market conditions.*</p>
                         <div class="fp-highlights">
                             <div class="fph-item">
                                 <i class="fas fa-shield-haltered"></i>
@@ -136,8 +137,8 @@
                             <div class="fph-item">
                                 <i class="fas fa-chart-line"></i>
                                 <div>
-                                    <strong data-i18n="products.fph2.title">Double-Digit Return Potential</strong>
-                                    <span data-i18n="products.fph2.desc">Prudent risk management</span>
+                                    <strong data-i18n="products.fph2.title">Measured Return Objective</strong>
+                                    <span data-i18n="products.fph2.desc">Disciplined risk management</span>
                                 </div>
                             </div>
                             <div class="fph-item">
@@ -208,7 +209,7 @@
             <div class="section-header">
                 <span class="section-tag" data-i18n="about.tag">About Us</span>
                 <h2 class="section-title" data-i18n="about.title">Our Core Business</h2>
-                <p class="section-subtitle" data-i18n="about.subtitle">We combine cutting-edge technology with deep financial expertise to deliver superior returns for our clients.</p>
+                <p class="section-subtitle" data-i18n="about.subtitle">We combine investment process, risk governance, and transparent reporting to support long-term client outcomes.</p>
             </div>
             <div class="features">
                 <div class="feature-card">
@@ -265,7 +266,7 @@
                         <li><span data-i18n="disclosure.card3.li3">Industry Conference Participation – </span><a href="announcements/industry-conference.html" data-i18n="disclosure.card3.li3.link">Schedule</a></li>
                         <li><span data-i18n="disclosure.card3.li4">CEO Keynote: Future of Digital Assets – </span><a href="announcements/ceo-keynote-digital-assets.html" data-i18n="disclosure.card3.li4.link">Watch Recording</a></li>
                     </ul>
-                    <div class="fb-toggle" id="fbToggle" onclick="var w=document.getElementById('fbWrap');if(w.innerHTML){w.innerHTML='';this.textContent='Latest Updates ▼';}else{w.innerHTML='<div class=fb-page data-href=https://www.facebook.com/jnscapital data-tabs=timeline data-height=300 data-small-header=true data-adapt-container-width=true data-hide-cover=true data-show-facepile=false></div>';this.textContent='Collapse ▲';if(typeof FB!=='undefined')FB.XFBML.parse(w);}">Latest Updates ▼</div>
+                    <div class="fb-toggle" id="fbToggle">Latest Updates</div>
                     <div class="fb-wrap" id="fbWrap"></div>
                 </div>
             </div>
@@ -277,7 +278,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag" data-i18n="contact.tag">Contact</span>
-                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+                <h2 class="section-title" data-i18n="contact.title">Connect With Us</h2>
                 <p class="section-subtitle" data-i18n="contact.subtitle">Connect with our team through the channels below.</p>
             </div>
             <div class="contact-wrapper">
@@ -313,7 +314,7 @@
                 </div>
                 <div class="social-section">
                     <div class="social-card">
-                        <h3 data-i18n="contact.social.title">Connect With Us</h3>
+                        <h3 data-i18n="contact.social.title">Tap to Contact</h3>
                         <div class="social-links">
                             <a href="https://t.me/JinnongSuiCapital" target="_blank" rel="noopener noreferrer" class="social-link telegram">
                                 <div class="social-label"><i class="fab fa-telegram"></i><span>Telegram</span></div>
@@ -345,44 +346,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var list = document.getElementById('recent-reports-list');
-            if (!list) return;
-            var reports = (typeof REGULATORY_REPORTS !== 'undefined') ? REGULATORY_REPORTS : [];
-            if (reports.length === 0) {
-                list.innerHTML = '<li class="report-loading">No documents found. Add files to regulatory-docs/ folder.</li>';
-                return;
-            }
-            var recent = reports.slice(0, 4);
-            var html = '';
-            recent.forEach(function(r) {
-                var ext = (r.filename || '').split('.').pop().toLowerCase();
-                var iconMap = { pdf:'fa-file-pdf', doc:'fa-file-word', docx:'fa-file-word', xls:'fa-file-excel', xlsx:'fa-file-excel', csv:'fa-file-csv', ppt:'fa-file-powerpoint', pptx:'fa-file-powerpoint', png:'fa-file-image', jpg:'fa-file-image', jpeg:'fa-file-image', gif:'fa-file-image', zip:'fa-file-archive', rar:'fa-file-archive', txt:'fa-file-alt', md:'fa-file-alt' };
-                var icon = iconMap[ext] || 'fa-file';
-                html += '<li><i class="fas ' + icon + ' recent-icon"></i> <span>' + escapeHtml(r.title) + '</span><small class="recent-date">' + escapeHtml(r.date) + '</small> – <a href="' + escapeHtml(r.path) + '" class="pdf-link">View</a></li>';
-            });
-            list.innerHTML = html;
-            list.querySelectorAll('.pdf-link').forEach(function(link) {
-                link.addEventListener('click', function(e) { e.preventDefault(); window.open(this.getAttribute('href'), '_blank', 'noopener'); });
-            });
-            if (typeof window.applyTranslations === 'function') {
-                var lang = window.getCurrentLang ? window.getCurrentLang() : (localStorage.getItem('apex-lang') || 'en');
-                window.applyTranslations(lang);
-            }
-        });
-
-        function escapeHtml(str) {
-            var div = document.createElement('div');
-            div.textContent = str;
-            return div.innerHTML;
-        }
-    </script>
 
     <!-- Facebook SDK -->
     <div id="fb-root"></div>
